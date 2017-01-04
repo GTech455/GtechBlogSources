@@ -16,10 +16,7 @@ public class JogosRPGPC extends ListActivity
 	Uri a;
 	MediaPlayer md;
 	Intent dl;
-	AssetManager as;
 	InputStream r;
-	byte[] bf;
-	int s;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -30,13 +27,47 @@ public class JogosRPGPC extends ListActivity
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getWindow().setBackgroundDrawableResource(R.raw.bg);
 		int[] rs = {
+			R.drawable.ragna,
+			R.drawable.perfect,
 			R.drawable.angels
 		};
 		String[] lt = {
+			"Ragnarok",
+			"Perfect World",
 			"League of Angels 2",
 
 		};
 		setListAdapter(new ad(this, lt, rs));
+	}
+	String gpc3(){
+		r = getResources().openRawResource(R.raw.gpc_rp_3);
+		ByteArrayOutputStream c = new ByteArrayOutputStream();
+		int s;
+		try{
+			s = r.read();
+			while(s != -1){
+				c.write(s);
+				s = r.read();
+			}
+			c.close();
+		} catch(IOException e){
+		}
+		return c.toString();
+	}
+	String gpc2(){
+		r = getResources().openRawResource(R.raw.gpc_rp_2);
+		ByteArrayOutputStream c = new ByteArrayOutputStream();
+		int s;
+		try{
+			s = r.read();
+			while(s != -1){
+				c.write(s);
+				s = r.read();
+			}
+			c.close();
+		} catch(IOException e){
+		}
+		return c.toString();
 	}
 	String gpc1(){
 		r = getResources().openRawResource(R.raw.gpc_rp_1);
@@ -63,6 +94,54 @@ public class JogosRPGPC extends ListActivity
 		final String lp = o.toString();
 		md = MediaPlayer.create(JogosRPGPC.this, R.raw.click_);
 		md.start();
+		if(lp.toString() == "Ragnarok"){
+			AlertDialog.Builder bd = new AlertDialog.Builder(this, R.style.alert);
+			bd.setTitle(lp);
+			bd.setIcon(R.raw.gpc);
+			bd.setMessage(gpc3());
+			bd.setPositiveButton("Baixar", new DialogInterface.OnClickListener(){
+					public void onClick(DialogInterface d, int vi){
+						MediaPlayer md = MediaPlayer.create(JogosRPGPC.this, R.raw.click_);
+						md.start();
+						a = a.parse("http://m.baixaki.com.br/download/ragnarok.htm");
+						dl = new Intent(dl.ACTION_VIEW, a);
+						startActivity(dl);
+					}
+				});
+			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
+					public void onClick(DialogInterface d, int vu){
+						MediaPlayer md = MediaPlayer.create(JogosRPGPC.this, R.raw.click_);
+						md.start();
+						Toast.makeText(JogosRPGPC.this, "Instalacao de " + lp + " Cancelada!!", Toast.LENGTH_LONG).show();
+					}
+				});
+			bd.create();
+			bd.show();
+		}
+		if(lp.toString() == "Perfect World"){
+			AlertDialog.Builder bd = new AlertDialog.Builder(this, R.style.alert);
+			bd.setTitle(lp);
+			bd.setIcon(R.raw.gpc);
+			bd.setMessage(gpc2());
+			bd.setPositiveButton("Baixar", new DialogInterface.OnClickListener(){
+					public void onClick(DialogInterface d, int vi){
+						MediaPlayer md = MediaPlayer.create(JogosRPGPC.this, R.raw.click_);
+						md.start();
+						a = a.parse("http://m.baixaki.com.br/download/perfect-world.htm");
+						dl = new Intent(dl.ACTION_VIEW, a);
+						startActivity(dl);
+					}
+				});
+			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
+					public void onClick(DialogInterface d, int vu){
+						MediaPlayer md = MediaPlayer.create(JogosRPGPC.this, R.raw.click_);
+						md.start();
+						Toast.makeText(JogosRPGPC.this, "Instalacao de " + lp + " Cancelada!!", Toast.LENGTH_LONG).show();
+					}
+				});
+			bd.create();
+			bd.show();
+		}
 		if(lp.toString() == "League of Angels 2"){
 			AlertDialog.Builder bd = new AlertDialog.Builder(this, R.style.alert);
 			bd.setTitle(lp);

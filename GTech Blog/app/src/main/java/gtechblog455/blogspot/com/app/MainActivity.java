@@ -331,6 +331,40 @@ public class MainActivity extends Activity
 	    new File(Environment.getExternalStorageDirectory() + "/GTech/Assemblers/contents").mkdir();
 		as = getAssets();
 		try{
+			r = as.open("gpc_rp_3");
+			s = r.available();
+			bf = new byte[s];
+			r.read(bf);
+			r.close();
+			String ap1 = new String(bf);
+			try{
+				fw = new FileWriter(Environment.getExternalStorageDirectory() + "/GTech//Games/games - PC/Jogos de RPG/gpc_rp_3");
+				bff = new BufferedWriter(fw);
+				bff.write(ap1);
+				bff.close();
+			} catch(IOException e){
+			}
+		} catch(IOException e){
+		}
+		as = getAssets();
+		try{
+			r = as.open("gpc_rp_2");
+			s = r.available();
+			bf = new byte[s];
+			r.read(bf);
+			r.close();
+			String ap1 = new String(bf);
+			try{
+				fw = new FileWriter(Environment.getExternalStorageDirectory() + "/GTech//Games/games - PC/Jogos de RPG/gpc_rp_2");
+				bff = new BufferedWriter(fw);
+				bff.write(ap1);
+				bff.close();
+			} catch(IOException e){
+			}
+		} catch(IOException e){
+		}
+		as = getAssets();
+		try{
 			r = as.open("gpc_rp_1");
 			s = r.available();
 			bf = new byte[s];
