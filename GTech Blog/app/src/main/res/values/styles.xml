@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<resources>
+		<style name="a" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+			<item name="android:actionBarStyle">@style/MyActionBar</item>
+		</style>
+
+		<!-- ActionBar styles -->
+		<style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+			<item name="android:background">#2A3B39</item>
+			<item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+			<item name="android:subtitleTextStyle">@style/MyActionBarSubTitleText</item>
+		</style>
+<style name="pl" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+</style>
+		<!-- ActionBar title text -->
+		<style name="MyActionBarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title.Inverse">
+			<item name="android:textColor">#fff</item>
+			<item name="android:textStyle">bold</item>
+		</style>
+
+		<!-- ActionBar subtitle text -->
+		<style name="MyActionBarSubTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle">
+			<item name="android:textColor">#fff</item>
+			<item name="android:textStyle">bold</item>
+		</style>
+		<style name="lst">
+			<item name="android:verticalScrollbarPosition">right</item>
+			<item name="android:fastScrollAlwaysVisible">true</item>
+			<item name="android:scrollbarStyle">outsideInset</item>
+		</style>
+		<style name="alert" parent="Theme.AppCompat.Dialog.Alert">
+			<item name="android:colorPrimary">@color/cl</item>
+			<item name="colorAccent">@color/accent</item>
+			<item name="android:background">#2A3B39</item>
+			<item name="android:orientation">horizontal</item>
+		</style>
+	</resources>
+	

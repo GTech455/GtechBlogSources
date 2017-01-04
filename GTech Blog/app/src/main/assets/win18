@@ -1,0 +1,5 @@
+Cubeé um premiado jogo de tiro em primeira pessoa com alta precisão dinâmica que utiliza OpenGL e SDL, com todas as características do estilo Doom/Quake. Com ótimos gráficos e jogabilidade impressionantes o jogo ainda traz de um bom sistema de detecção de colisões e física para dar mais emoção e realidade as suas ações.
+
+O Cube tem mais de 100 mapas para que você possa explorar todas as áreas e dois modos de jogo: singleplayer ou multiplayer online (que utiliza uma boa rede cliente/servidor livre de lags). Além disso, o Cube ainda vem com um editor de mapas onde é possível fazer alterações geométricas diretamente no engine, como visão superior 3D, para que o jogador crie suas próprias aventuras.
+
+Roda em 95/98/NT/ME/XP

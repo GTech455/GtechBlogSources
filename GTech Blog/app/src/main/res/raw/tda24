@@ -1,0 +1,49 @@
+Olá. Nesse tutorial vou ensinar como validar formulários no Android. Primeiro vamos construir um layout que vai conter um pequeno formulário. Dessa forma:
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content">
+<EditText
+android:id="@+id/ed"
+android:hint="userName..."
+android:singleLine="true"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content" />
+<EditText
+android:id="@+id/ed2"
+android:hint="Password..."
+android:singleLine="true"
+android:inputType="textPassword"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content" />
+<Button
+android:id="@+id/bt"
+android:text="Submit"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" />
+</LinearLayout>
+
+Agora vamos validar esse formulário de usuário e senha. Vamos a atividade Java:
+
+// instanceando os 3 widgets
+EditText ed = (EditText) findViewById (R.id.ed);
+EditText ed2 = (EditText) findViewById (R.id.ed2);
+Button  bt = (Button) findViewById (R.id.bt);
+// aplicando o evento click listener do botão
+bt.setOnClickListener (new OnClickListener (){
+public void OnClick (View {
+// Colhendo informações dos edit texts
+if (!ed.getText ().toString().equals ("")){
+// minha ação quando valor em branco...
+} else {
+// Qualquer erro ocorrido ele vai notificar. Aqui fica a mensagem do erro...
+}
+if (ed2.getText().toString().equals ("")){
+minha ação desse valor em branco...
+} else {
+Mensagem de erro...
+}
+}
+});
+
+Esse foi só um exemplo parte 1. No próximo tutorial vamos inserir valores no formulário.  Até a próxima...

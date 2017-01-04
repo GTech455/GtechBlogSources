@@ -1,0 +1,32 @@
+Olá. Nesse tutorial vou ensinar como usr setItems em seu AlertDialog. Bem simples. Como é setItems não está disponibilizado alterações no objeto, que será usado como um submenu. Primeiramente vamos definir a caixa de diálogo como padrão usando AlertDialog.Builder. A caixa de diálogo usada com setItems precisa de um ArrayList e um evento ClickListener. Dessa forma:
+
+package com.app;
+import android.app.*;
+import android.content.*;
+import android.os.*;
+import android.view.*;
+import android.view.View.OnClickListener;
+
+public class m extends Activity{
+	public void onCreate(Bundle m){
+		super.onCreate(m);
+		Aplicando o ArrayList...
+		final String[] lt ={
+			"item 1"
+		};
+		Agora aplicamos a caixa com o método...
+		AlertDialog.Builder b = new AlertDialog.Builder(this);
+		b.setitems(lt, new Dialog.OnClickListener(){
+			public void onClick(DialogInterface d, int vi){
+				Para vlidar o objeto usamos diferêntes formas, como essa.
+				if(lt[vi].toString() == "item 1"){
+					Minha ação...
+				}
+			}
+		});
+		b.create();
+		b.show();
+	}
+}
+
+Meio complicado de entender bem, mas tudo bem. O ArrayList foi usado com o objeto vi, que pertence ao argumento positivo do evento. O d não vale nada, somente é um argumento negativo, o que vale é o argumento que vem depois dele. Qual objeto então que eu uso para validar a lista então? O lt[vi], claro! Esse é o objeto que será instânciado com sua lista. Bom, é isso, não pode ser sem o final no ArrayList, porque ele sozinho só vale para a classe local. Dúvidas de seu feedback...

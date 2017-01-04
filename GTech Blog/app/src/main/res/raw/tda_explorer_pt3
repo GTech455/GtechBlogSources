@@ -1,0 +1,74 @@
+Olá. Nessa parte vamos tratar os tipos de mime, ou seja, como expliquei antes, vamos colocar uma ação automática para items. Primeiramente vamos a nossa principal atividade que lista tudo:
+
+package com.app; 
+import android.app.*; 
+import android.os.*; 
+import android.content.*; import java.io.*;
+import android.view.*; 
+import java.util.*;
+
+public class nome extends ListActivity {
+// nosso ArrayList private ArrayList<String> items = new ArrayList<String>();
+
+public void onCreate(Bundle m){ super.onCreate(m); 
+// método que chama a listagem try{
+listar();
+} catch (IOException e){ }
+} 
+// criando o método listar
+public void listar(){ 
+// acessando o diretório
+File dir = new File(Environment. getExternalStorageDirectory(), ""); 
+// método File[] com array que lista os items 
+File[] dr = dir.listFiles();
+// instancia que vai anexar os métodos a seguir: 
+if(dr != null){ 
+int length = dr.length; 
+for(int i=0; l<length; ++i){ 
+// Objeto que vamos usar com nossa arraylist 
+File f = dr[i]; 
+if(f.isDirectory()){
+// listar só o que é diretório items.add(f.getName());
+}
+}
+// Adapter da lista 
+ArrayAdapter ad = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items); setListAdapter(ad); 
+}
+}
+// mime type
+private String getType(File file) { String type = null;
+try { 
+URL u = file.toURL(); URLConnection uc = null;
+uc = u.openConnection();
+type = uc.getContentType(); 
+} catch (Exception e) {  
+} 
+return type;
+}
+//método de validação da lista public void onListItemClick(ListView l, View v, int p, long id){
+// pegando o item clicado Object o = getListAdapter().getItem(p);
+// Objeto que vamos usar para validar items... final String lp = o.toString();
+// vamos colocar o método abrir pasta e o mime altomatico
+if(lp.toString() == lp){
+Intent it = new Intent(nome.this, display.class); String txt = "txt"; txt = lp.toString(); 
+Bundle b = new Bundle(); 
+b.putString("txt", txt); 
+it.putExtras(b);
+startActivity(it); 
+}
+Aqui fica o mime
+
+File file = new File(Environment.getExternalStorageDirectory(), lp); 
+String type = getType(file); Intent it = new Intent(); 
+it.setAction(android.content.Intent. ACTION_VIEW); 
+it.setType(Uri.fromFile(file), type); 
+try { 
+startActivity(it); 
+} catch (Exception e) {
+// mensagem erro, exemplo:
+Toast.makeText(this, "Aplicativo n ecessário não encontrado.", Toast.LENGT H_SHORT);
+}
+}
+}
+
+Agora nosso explorador de arquivos lista, abre pastas e arquivos. Na próxima parte vamos copiar e mover arquivos de uma pasta a outra. Dúvidas de seu feedback...

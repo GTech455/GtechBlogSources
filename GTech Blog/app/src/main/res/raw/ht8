@@ -1,0 +1,16 @@
+Olá. Nesse tutorial vou ensinar como criar 
+Worm. Temos dois métodos de criação do vírus.
+Ele pode ser criado com o Bloco de notas e também 
+utilizando o VBSWG que salva Worm em script
+no formato .vbs. Bom, o Worm criado no bloco de notas é o Worny Worm, que é criado da seguinte forma:
+
+@ECHO OFF
+CLS
+DIR>>ENCHE
+TYPE ENCHE>>ENCHE
+:ENCHE
+CLS
+@echo mensagem...
+GOTO ENCHE
+
+Já o Worm criado pelo VBSWG tem vários recursos para seu Worm. É um programa bem fâcil de usar, é só seguindo tudo o que pede. Bom, esse foi um tutorial demonstrativo, o resto é por sua conta. Bom, fico por aqui, dúvidas de o seu FeedBack...

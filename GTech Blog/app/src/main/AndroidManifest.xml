@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gtechblog455.blogspot.com.app" >
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@raw/app"
+        android:label="@string/app_name"
+        android:theme="@style/pl" >
+        <activity
+			
+            android:name=".pl"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".MainActivity"
+			android:label="@string/app_name"/>
+		<activity		
+			android:theme="@style/a"
+			android:name=".apa"
+			android:label="@string/app_apa">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity		
+			android:theme="@style/a"
+			android:screenOrientation="landscape"
+			android:name=".apwin"
+			android:label="@string/app_win">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".ct"
+			android:label="@string/app_ct">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".gpc"
+			android:label="@string/app_gpc">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".gma"
+			android:label="@string/app_gma">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".gma2"
+			android:label="@string/gtech_gma2">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+		 	android:screenOrientation="landscape"
+			android:name=".ass">
+			<meta-data
+				android:title="Voltar..."
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:screenOrientation="landscape"
+			android:name=".aps"
+			android:label="@string/app_aps" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".apsa"
+			android:label="@string/app_apsa" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".gma4"
+			android:label="@string/app_gma4" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".gma5"
+			android:label="@string/app_gma5" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".gma6"
+			android:label="@string/app_gma6" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".gma7"
+			android:label="@string/app_gma7" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".gma8"
+			android:label="@string/app_gma8" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".gpc2"
+			android:label="@string/app_gpc2" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".jogosTiro"
+			android:label="@string/app_jogosTiro" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".JogosCartas"
+			android:label="@string/app_jogosCartas" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".JogosEstrategia"
+			android:label="@string/app_jogosEstratégia" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".JogosRPG"
+			android:label="@string/app_jogosRPG" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".JogosSinuca"
+			android:label="@string/app_jogosSinuca" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".JogosLuta"
+			android:label="@string/app_jogosLuta" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".JogosAcao"
+			android:label="@string/app_jogosAcao" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".extras"
+			android:label="@string/app_extras" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".JogosPCTiroFPS"
+			android:label="@string/app_tiroFPS" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".JogosEstrategiaPC"
+			android:label="@string/app_est" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+		<activity
+			android:theme="@style/a"
+			android:name=".JogosRPGPC"
+			android:label="@string/app_rp" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
+		</activity>
+    </application>
+</manifest>

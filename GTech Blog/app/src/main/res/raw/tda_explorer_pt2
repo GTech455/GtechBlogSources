@@ -1,0 +1,101 @@
+Olá. Nessa parte vamos criar o método que abre pastas do SD Card do android. Para isso vamos separar uma atividade só para essa operação. Declarando ela no manifesto e em seguida vamos a nossa atividade que listou os items e vamos validá-los:
+
+package com.app;
+import android.app.*; 
+import android.os.*;
+import android.content.*;
+import java.io.*;
+import android.view.*;
+import java.util.*;
+
+public class nome extends ListActivity { 
+// nosso ArrayList private ArrayList<String> items = new ArrayList<String>();
+
+public void onCreate(Bundle m){ super.onCreate(m); 
+// método que chama a listagem try{ 
+listar(); 
+} catch (IOException e){ 
+} 
+} 
+// criando o método listar public void listar(){
+// acessando o diretório File dir = new File(Environment.getExternalStorageDirectory(), ""); // método File[] com array que lista os items File[] dr = dir.listFiles(); 
+// instancia que vai anexar os métodos a seguir:
+if(dr != null){
+int length = dr.length;
+for(int i=0; l<length; ++i){ 
+// Objeto que vamos usar com nossa arraylist
+File f = dr[i];
+if(f.isDirectory()){ 
+// listar só o que é diretório items.add(f.getName()); 
+}
+} 
+// Adapter da lista 
+ArrayAdapter ad = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items); setListAdapter(ad); 
+} 
+} 
+//método de validação da lista
+public void onListItemClick(ListView l, View v, int p, long id){
+  // pegando o item clicado
+Object o = getListAdapter().getItem(p);
+// Objeto que vamos usar para validar items...
+final String lp = o.toString();
+// como é para abrir pastas, por enquanto aplicamos direto. Começando pegando o valor chave para passar para a tela a seguir.
+Intent it = new Intent(nome.this, display.class);
+String txt = "txt";
+txt = lp.toString();
+Bundle b = new Bundle();
+b.putString("txt", txt);
+it.putExtras(b);
+startActivity(it);
+}
+}
+
+Agora que essa atividade está pronta vamos a segunda atividade. Essa atividade, ela vai listar o que tiver dentro da pasta. Então a idéia é fazer a atividade anterior enviar o nome da pasta para a segunda atividade receber para listar. Então vamos lá:
+
+package com.app;
+import android.app.*;
+import android.os.*;
+import android.view.*;
+import java.util.*;
+import android.content.*;
+
+public class display extends ListActivity {
+  private ArrayList<String> items = new ArrayList<String>();
+public void onCreate(Bundle m){
+  super.onCreate(m);
+try{
+listar();
+} catch (IOException e){
+é necessário o catch, porque em caso de erro sua mensagem de erro vai aqui, exemplo:
+e.getMessage();
+}
+}
+// método que lista
+public void listar(){
+
+Intent it = getIntent();
+Bundle b = it.getExtras();
+// objeto que vai alimentar o componente selecionado para exibir os dados
+String pasta = b.getString("txt");
+File dir = new File(Environment.getExternalStorageDirectory(), pasta);
+File[] dr = dir.listFiles();
+if(dr != null){
+int length = dr.length;
+for(int i=0; i<length; ++i){
+File f = dr[i];
+// método diretório
+if(f.isDirectory()){
+items.add(f.getName());
+}
+// método arquivos
+if(f.isFile()){
+items.add(f.getName());
+}
+}
+}
+ArrayAdapter ad = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
+setListAdapter(ad);
+}
+}
+
+A idéia foi essa. Um dos mais de mil exemplos de abrir pastas, esse foi um deles. Bom,

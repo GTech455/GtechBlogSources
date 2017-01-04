@@ -1,0 +1,15 @@
+Olá. Nesse tutorial vou ensinar como aplicar link em seu projeto usando a ativodade Java. O método é bem simples, ele contém:
+
+Uri ( Método URL da página )
+Intent ( Com a ação de ver/visualizar )
+
+Veja o exemplo abaixo:
+
+import android.content.Itent;
+import android.net.Uri;
+
+Uri a = Uri.parse("http://site.com");
+Intent it = new Intent(Intent.ACTION_VIEW, a);
+startActivity(it);
+
+Dessa forma. Bom, é isso, dúvidas de seu FeedBack...

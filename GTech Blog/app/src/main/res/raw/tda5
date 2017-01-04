@@ -1,0 +1,8 @@
+Olá. Nesse tutorial vou ensinar como chamar áudio em um Widget. Bem simples, vamos utilizar um MediaPlayer no click do Widget. Após preparar o widget com click ou id aplique o MediaPlayer no click, veja o exemplo abaixo:
+
+import android.media.*;
+
+MediaPlayer nd = MediaPlayer.create(Context, R.raw.click);
+md.start();
+
+Dessa forma. O Widget, agora possui áudio ao clicar. Isso vale para música de fundo. Bom, é isso, dúvidas de seu FeedBack...

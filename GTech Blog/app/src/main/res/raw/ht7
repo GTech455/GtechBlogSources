@@ -1,0 +1,22 @@
+Olá. Nesse tutorial vou 
+ensinar como invadir um PC. Existem diversos métodos
+de invasão que pode ser feito com:
+
+- Telnet ( exige porta aberta )
+- Programas espiões
+- FTP
+
+Telnet: O Telnet é um recurso do CMD que permite
+gerênciar redes e computadores conectados com a rede. Também é utilizado para
+invadir computadores. Primeiramente você precisa abrir a porta Telnet do seu modem
+antes de usar Telnet em seu PC. Após tudo certo digitamos para iniciar telnet:
+
+telnet
+
+Abriu o Telnet. Digitamos open para abrir. Agora digite o IP da vítima de enter. Você já está no computador selecionado. Porêm esse método é bastante arriscado, pois se o computador desejado tiver
+infectado o seu também vai ficar.
+
+NjRat: O NjRat é um turkojan executável. Ele se esconde no diretório do sistema permitindo a invasão. Mas para usar NjRat você precisa abrir 3 portas do seu modem para usar o Trojan, por último precisa permitir o
+programa no FireWall do sistema. Recomendo que use uma No-IP, para que seu IP fique ocuto e não seja descoberto. Após criado, a vítima vai executar o vírus, ai você será notificado. Ai é por sua conta...
+
+Além do NjRat existem outros Trojans para invadir PC, só mostrei um exemplo. Bom, fico por aqui, dúvidas envie seu FeedBack...

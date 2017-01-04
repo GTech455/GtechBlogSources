@@ -1,0 +1,24 @@
+Olá. Nesse tutorial vou ensinar como aplicar uma tela de apresentação em seu App. Para isso você precisa separar uma Atividade só para essa tela. Uma tela de apresentação pode ser criada só com a atividade Java ou até mesmo editada com arquivo XML com o mesmo. No exemplo que vou mostrar vou construir uma tela com fundo, usando só a atividade Java. Depois de criada a tela você precisa subistituir a primeira atividade Java de todas no manifest com o <intent-filter> pela tela de apresentação. A tela de conteúdo fica sendo a segunda atividade do manifest, sem o <intent-filter>. Veja o exemplo abaixo:
+
+package com.app;
+import android.app.*;
+import android.os.*;
+import java.util.*;
+public class m extends Activity{
+	public void onCreate(Bundle m){
+		super.onCreate(m);
+		// Aplicando a tela
+		getWindow().setBackgroundDrawableResource(R.pasta.fundo);
+		// Escrevendo o método Timer e TimerTask()
+		new Timer().schedule(new TimerTask(){
+			// Definindo os parâmetros
+			public void run(){
+				// Aplicando método finish() para não retornar a tela de apresentação quando voltar com o botão do dispositivo
+				finish();
+				// Defina a Intent da tela que vai ser a seguinte.
+			}
+		}, 6000);
+	}
+}
+
+O valor 6000 é a duração da tela definido em milésimos de segundos, o valor 6000 fica como 5 segundos. Pode ser maior. Bom, é isso, dúvidas de seu FeedBack...

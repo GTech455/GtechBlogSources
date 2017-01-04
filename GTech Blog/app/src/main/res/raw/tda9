@@ -1,0 +1,19 @@
+Olá. Nesse tutorial vou ensinar como alinhar items na mesma posição em seu projeto. No exemplo que vou ensinar serâ feito com uma imagem e um texto, alinhados na mesma posição. Bom, primeiramente temos que definir um layout só para esses dois items, que vai seguir na horizontal. Veja o exemplo abaixo:
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content">
+<LinearLayout
+// Definir largura e altura>
+<ImageView
+ android:src="@pasta/imagem"
+ // Definir largura e altura. />
+ <TextView
+   android:text="hello world!!"
+   android:layout_margin="10dp"
+   // Definir largura e altura />
+</LinearLayout>
+</LinearLayout>
+
+Dessa forma. Bom, é isso, dúvidas de seu FeedBack...

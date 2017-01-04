@@ -1,0 +1,21 @@
+Olá. Nesse tutorial vou ensinar como aplicar auto rolagem em seu TextView, isto é, autoScroll. Bem simples. Precisamos aplicar no TextView os seguintes parâmetros, que são:
+
+<TextView
+  android:text="seu texto..."
+  android:ellipSize="marquee"
+  android:marqueeRepeatLimit="2, para ele repetir duas vezes, ou marquee_forever para não parar"
+  android:scrollHorizontally="true"
+  android:focusable="true"
+  android:singleLine="true"
+  android:focusableInTouchMode="true" />
+
+Até ai tudo bem. A primeira linha está com o auto scroll. Agora, a segunda linha com esse mesmo método não vai funcionar. Porque será? Deixa eu explicar. A partir da segunda linha 
+precisa gravar esse parâmetro com a atividde Java. Então, precisamos instânciar o Widget com a id na atividade Java e dar um movimento de método para ele, assim:
+
+TextView tv = (TextView) findViewById(R.id.tv);
+// Escrevendo o método
+tv.setMovementMethod(new ScrollingMovementMethod());
+
+Toque sobre o texto para iniciar a rolagem com o mesmo parâmetro que colocamos no TextView de ellipSize, etc. Repare que o primeiro texto parou. Então para as duas linhas terem auto rolagem use a id
+também com o método gravado no Java. Assim sucessivamente. Muitos de perdem nessa hora e não sabem o que fazer. Mas é isso, para acionar a auto rolagem toque na linha
+desejada com o método gravado no Java que a rolagem vai ser ativada. Porêm, funciona com uma linha de cada vez. Bom, é isso, dúvidas de seu feedback...

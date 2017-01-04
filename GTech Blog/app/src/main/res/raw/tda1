@@ -1,0 +1,51 @@
+Olá. Nesse tutorial vou ensinar como escrever documento de texto da pasta assets para o SdCard do Android. Bem simples. Esse método é feito no Java do seu projeto. Bom, primeiramente precisamos importar o io do java e o conteúdo da pasta res, dessa forma:
+
+package your.package;
+import android.app.*;
+import android.os.*;
+import java.io.*;
+import android.content.res.*;
+public class m{
+	// Método Assets
+	AssetManager as;
+	// Método que escreve dentro do txt
+	BufferedWriter bff;
+	// Escreve o txt no SdCard
+	FileWriter fw;
+	// peça que lê o txt
+	byte[] bf;
+	// enclemento assets
+	int s;
+	public void onCreate(Bundle m){
+		super.onCreate(m);
+		// abre o txt
+		as = getAssets();
+		try{
+			// abrindo txt
+			r = as.open("file.txt");
+			s = r.available();
+			// lendo o txt
+			bf = new byte[s];
+			// escrevendo o código
+			r.read(bf);
+			r.close();
+			String l = new String(bf);
+			// Escrevendo o txt
+			try{
+				fw = new FileWriter(Environment.getExternalStorageDirectory() + "/teste.txt");
+				// Escrevendo dentro do txt
+				bff = new BufferedWriter(fw);
+				bff.write(l);
+				bff.close();
+			} catch(IOException e){
+			}
+		} catch(IOException e){
+		}
+	}
+}
+
+Para tudo funcionar você precisa declarar a permissão no manifest:
+
+<uses-permission android:name="androd.permission.WRITE_EXTERNAL_STORAGE" />
+
+Dessa forma. O texto foi escrito com êxito. Bom, é isso, dúvidas de seu FeedBack...

@@ -1,0 +1,29 @@
+Olá. Nesse tutorial vou ensinar como aplicar submenu em seu projeto usando Context Menu. No exemplo que vou mostrar vou dar submenu a um botão. Veja o exemplo abaixo:
+
+<Button
+  android:id="@+id/bt"
+  // Definir largura e altura />
+  
+Agora vamos a atividade Java:
+  
+Button bt = (Button) findViewById(R.id.bt);
+bt.setOnClickListener(new OnClickListener(){
+	public void onClick(View vi){
+		// Aplicando método do submenu
+		registerForContextMenu(vi);
+	}
+});
+Agora definimos o SubMenu
+public void onCreateContextMenu(ContextMenu m, View v, ContextMenu.ContextMenuInfo in){
+	// Escrevendo as opções
+	m.add("Item 1");
+	return true;
+}
+public void onContextItemSelected(MenuItem o){
+	if(i.getTitle() == "Item 1"){
+		// minha ação...
+	}
+	return true;
+}
+
+Dessa forma. Para acionar o submenu toque e segure por 5 segundos e solte. Bom, é isso, dúvidas de seu FeedBack...

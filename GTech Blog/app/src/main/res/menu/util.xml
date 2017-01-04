@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+	<item
+		android:showAsAction="ifRoom"
+		android:id="@+id/fe"
+		android:title="Reportar Problemas" />
+    
+</menu>

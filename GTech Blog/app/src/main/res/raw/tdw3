@@ -1,0 +1,5 @@
+Olá. Nesse tutorial vou ensinar como desligar seu computador pela CMD. Bem simples. No CMD digite:
+
+shutdown -s -c -t10
+
+Pronto! Seu computador será desligado em 10 segundos. Bom, é isso, dúvidas de seu FeedBack...

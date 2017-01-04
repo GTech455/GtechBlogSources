@@ -1,0 +1,11 @@
+Olá. Nesse tutorial vou ensinar como aplicar um <ScrollView /> em seu projeto. Primeiramente, para o ScrollView funcionar com mais de 1 item precisa de um layout pai, que será responsável pelos items. Veja o exemplo abaixo:
+
+<ScrollView
+  // Definir largura e altura>
+  <LinearLayout
+  // Definir largura e altura>
+  // Aqui os items em Scroll
+  </LinearLayout>
+  </ScrollView>
+  
+  Dessa forma, não pode deixar de dar o layout pai. Bom, é isso, dúvidas de seu FeedBack...

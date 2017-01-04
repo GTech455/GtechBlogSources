@@ -1,0 +1,12 @@
+Olá. Nesse tutorial vou ensinar como utilizar Terminal Emulator. Bem simples. Essa ferramenta utiliza o acesso de Super Usuário na maioria das funções, como instalar o busybox do Android, usar FTP, etc. Para saber todas as funções da ferramenta digite busybox, ou então digite:
+
+start $_ de enter
+busybox de enter
+
+Foi exibido todas as funções. Para saber uma por uma, digite a função e help:
+
+rm help ( Ferramenta de invasão de sites. )
+mount help
+ftp help
+
+Dessa forma. Bom, é isso, dúvidas de seu FeedBack...

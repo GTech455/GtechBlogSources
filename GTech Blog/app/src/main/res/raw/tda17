@@ -1,0 +1,31 @@
+Olá. Nesse tutorial vou ensinar como aplicar o KIT KAT Alert Dialog em seu projeto. Priemeira coisa que você deve fazer é adicionar o suport app compat v7 e baixá-lo. Após baixado o suporte, crie um arquivo dentro da pasta values do seu projeto, nela vai conter o estilo da caixa de diálogo kit kat.
+
+Arquivo de estilo:
+
+<?xml version="1.0" encoding="utf-8"?>
+	<resources>
+		<style name="app" parent="Theme.AppCompat.Light.Dialog.Alert">
+			<item name="colorAccent">Cor do botão...</item>
+			<item name="android:orientation">horizontal</item>
+			<item name="android:textColorPrimary">Cor do títutlo...</item>
+			<item name="android:background">Fundo da caixa...</item>
+			</style>
+		</resources>
+		
+		Após criar o arquivo de estilo, vamos, então a nossa atividade Java. Em nossa atividade precismos importar o suporte e aplicar o arquivo de estilo no construtor da caixa.
+		
+		Minha atividade Java
+		
+		package com.app;
+		import android.suport.v7.app.*;
+		import android.os.*;
+		public class m extends Activity{
+			public void onCreate(Bundle m){
+				super.onCreate(m);
+				AlertDialog.Builder b = new AlertDialog.Builder(this, R.style.nome_estilo);
+				propriedades...
+			}
+		}
+		
+		
+		Dessa forma. Bom, fico por aqui, dúvidas de seu feedback...

@@ -1,0 +1,9 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:scrollbars="none"
+android:layout_height="wrap_content">
+<ImageView
+android:src="@drawable/gain"
+android:layout_width="239dp"
+android:layout_height="240dp" />
+</HorizontalScrollView>

@@ -1,0 +1,79 @@
+Olá. Nesse tutorial vou ensinar como personalizar sua ListView. Nesse tutorial vamos personalizar nossa ListView dando ícones para cada item. Primeiramente vamos criar um ArrayAdapter externo dentro da pasta adaptor na pasta da activity. Dê qualquer nome para o arquivo de adapter. Agora, nessa activity do adapter vamos extender como ArrayAdapter, método mais simples de todos. Assim:
+
+package com.mycompany.myapp.adaptor;
+import com.mycompany.myapp.R;
+import android.widget.*;
+import android.content.*;
+import android.view.*;
+public class ad extends ArrayAdapter<String>
+{
+	final Context c;
+	final String[] lt;
+	public ad(Context c, String[] lt){
+		super(c, R.layout.f, lt);
+		this.c = c;
+		this.lt = lt;
+	}
+	public View getView(int p, View v, ViewGroup a){
+// Inflando a lista...
+		LayoutInflater li = (LayoutInflater) c.getSystemService(c.LAYOUT_INFLATER_SERVICE);
+		View r = li.inflate(R.layout.f, a, false);
+// Instanceando os widgets...
+		final TextView tv = (TextView) r.findViewById(R.id.tv);
+		ImageView im = (ImageView) r.findViewById(R.id.im);
+// Dando o texto da lista pelo objeto lt[p] que é a lista e o objeto p...
+		tv.setText(lt[p]);
+		String s = lt[p];
+		System.out.println(s);
+Dando os ícones atravéz do titúlo do item. Se quiser a mesma imagem em todos os items coloque if(s.equals(s.toString)){}...
+		if(s.equals("#Edit 1")){
+			im.setImageResource(R.drawable.ic_launcher);
+		} else if(s.equals("#Edit 2")){
+			im.setImageResource(android.R.drawable.ic_delete);
+		}
+		return r;
+	}
+}
+
+ArrayAdapter .xml
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ImageView
+		android:id="@+id/im"
+		android:layout_width="50dp"
+		android:layout_height="60dp" />
+	<TextView
+		android:text="@+id/tv"
+		android:id="@+id/tv"
+		android:layout_margin="10dp"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+</LinearLayout>
+
+Por último vamos chamar o adapter para nossa lista na atividade primcipal. Assim:
+
+package com.mycompany.myapp;
+
+import android.app.*;
+import android.os.*;
+import android.widget.*;
+import android.view.*;
+import com.mycompany.myapp.adaptor.ad;
+
+public class MainActivity extends ListActivity 
+{
+    @Override
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+		final String[] lt = {
+			"#Edit 1",
+			"#Edit 2"
+		};
+	setListAdapter(new ad(this, lt));
+    }
+}
+
+Dessa forma. Pronto! Sua lista foi personalizada com sucesso. Bom, é isso, dúvidas de seu feedback...

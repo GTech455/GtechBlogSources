@@ -1,0 +1,7 @@
+Olá. Nesse tutorial vou ensinar como instalar o Linux em seu Android com o Linux Deploy. Com essa ferramenta que utiliza o Acesso de Super Usuário é possível instalar qualquer versão do Linux. Porêm, requer algumas regras:
+
+- 5GB de RAM
+- Depuração USB ativada
+- VNC Mouse Viewer
+
+Se não o Linux não será instalado. Após concedido o Super Usuário toque no ícone download no rodapé do App. Nessa página escolha a versão do Linux que deseja instalar, faça suas configurações pessoais. Agora baixe o VNC. Abrindo o App, digite o endereço IP do seu Modem. O mouse agora pode ser controlado por qualquer computador conectado com a rede, a senha é changeme. Agora que está tudo pronto clique na seta de play no rodapé do App para começar a instalação. Seu Android será reiniciado já com o sistema funcionando com a ordem de Boot. Dúvidas de seu FeedBack...

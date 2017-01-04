@@ -1,0 +1,27 @@
+Olá. Nesse tutorial vou ensinar como passar dados de uma atividade para a outra. Bem simples. 
+Para passar dados de uma atividade para a outra precisamos dar o valoir chave do dado usando o Bundle. Assim ele vai passar os dados desejados da activity atual para a outra. Assim:
+
+Intent it = new Intent(tela.this, tela2.class);
+// exemplo com edittext
+EditText ed = (EditText) findViewById(R.id.ed);
+String txt = "";
+// pegando o que foi digitado no componente
+txt = ed.getText().toString();
+Bundle b = new Bundle();
+b.putString("txt", txt);
+it.putExtras(b);
+startActivity(it);
+
+Até aqui beleza. Na segunda tela vamos puxar os dados dessa atividade e colocar na nova activity:
+
+Tela 2.java:
+
+Intent it = getIntent();
+Bundle b = it.getExtras();
+// objeto que vai alimentar o componente selecionado para exibir os dados
+String txt = b.getString("txt");
+// exemplo com textView
+TextView tv = (TextView) findViewById(R.id.tv);
+
+Dessa forma. Bom, é isso, dúvidas de seu feedback...
+tv.setText(txt);

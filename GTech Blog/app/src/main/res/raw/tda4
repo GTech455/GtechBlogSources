@@ -1,0 +1,19 @@
+Olá. Nesse tutorial vou ensinar como usar Intent para envio de email. Bem simples. Vamos precisar de 3 extras que são:
+
+- Email
+- Subject
+- Text
+
+Com a ação de enviar. Veja um exemplo:
+
+import android.content.*;
+Intent it = new Intent(Intent.ACTION_SEND);
+// Escrevendo os extras
+it.putExtra(Intent.EXTRA_EMAIL, new String[]{
+	"seuemail@provedor"
+});
+it.putExtra(Intent.EXTRA_SUBJECT, "Subject");
+it.putExtra(Intent.EXTRA_TEXT, "Text...");
+startActivity(it);
+
+Dessa forma. Bom, é isso, dúvidas de seu FeedBack...

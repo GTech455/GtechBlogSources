@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+<ImageView
+	android:src="@raw/gma"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" />
+    <TextView
+		android:textSize="20dp"
+		android:layout_margin="10dp"
+		android:textColor="#32cd32"
+        android:id="@+id/tvg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

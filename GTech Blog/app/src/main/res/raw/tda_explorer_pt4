@@ -1,0 +1,49 @@
+Olá. Nessa parte vamos copiar e mover arquivos do SD Card do android. Vou criar um exemplo, você pode estar fazendo diferênte como listar a pasta que quer copiar, etc. Bom, vamos fazer um pequeno exemplo de copiar e mover usando apenas um método direto, apenas para testes. Em nossa atividade primcipal está assim:
+
+package com.app; 
+import android.app.*;
+import android.os.*;
+import android.content.*; import java.io.*; 
+import android.view.*; 
+import java.util.*;
+
+public class nome extends ListActivity {
+// nosso ArrayList 
+private ArrayList<String> items = new ArrayList<String>();
+
+public void onCreate(Bundle m){ super.onCreate(m); 
+// método que chama a listagem try{ 
+listar(); 
+} catch (IOException e){ } 
+}
+// criando o método listar 
+public void listar(){ 
+// acessando o diretório
+File dir = new File(Environment. getExternalStorageDirectory(), ""); 
+// método File[] com array que lista os items 
+File[] dr = dir.listFiles(); 
+// instancia que vai anexar os métodos a seguir: 
+if(dr != null){ 
+int length = dr.length; 
+for(int i=0; l<length; ++i){ 
+// Objeto que vamos usar com nossa arraylist
+File f = dr[i];
+if(f.isDirectory()){ 
+// listar só o que é diretório items.add(f.getName());
+} 
+} 
+// Adapter da lista 
+ArrayAdapter ad = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items); setListAdapter(ad); 
+} 
+}
+//método de validação da lista public void onListItemClick(ListView l, View v, int p, long id){ // pegando o item clicado Object o = getListAdapter().getItem(p); // Objeto que vamos usar para validar items...
+final String lp = o.toString();
+// método copiar...
+
+File from = new File(Environment.getExter nalStorage().getAbsolutePath(), "imagem.png"); 
+File to = new File(Environment.getExternal Storage().getAbsolutePath(), "pasta/image m.png"); 
+from.renameTo(to);
+} 
+}
+
+Bom, esse foi o exemplo citado. Esse método tanto move quanto copia. Na próxima parte vamos deletar e renomear arquivos e pastas. Dúvidas de seu feedback...

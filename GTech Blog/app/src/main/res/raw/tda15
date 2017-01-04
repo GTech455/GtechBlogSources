@@ -1,0 +1,36 @@
+Olá. Nesse tutorial vou ensinar como aplicar menu em seu projeto. Primeiramente você precisa criar a pasta menu dentro da pasta res do dru projeto. Dentro dessa pasta vai conter o arquivo editor do menu. No exemplo abaixo teremos um menu na barra de ações do App e um menu no rodapé do app. Veja o exemplo abaixo:
+
+Arquivo de menu res>menu
+
+<menu
+xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+  android:showAsAction="ifRoom"
+  android:icon="@pasta/icon"
+  android:id="@+id/m1" />
+  <item
+  android:title="Menu 1"
+  android:id="@+id/m2" />
+</menu>
+
+Atividade Java:
+
+// Construindo o menu
+public boolean onCreateOptionsMenu(Menu m){
+	// Inflando o menu
+	getMenuInflater().inflate(R.menu.menu, m);
+	return true;
+}
+public boolean onOptionsItemSelected(MenuItem i){
+	switch(i.getItemId()){
+		case R.id.m1:
+		// Action
+		return true;
+		case R.id.m2:
+		// Action
+		return true;
+	}
+	return true;
+}
+
+Pronto. O Menu foi criado com êxito. Dúvidas de seu FeedBack...

@@ -1,0 +1,5 @@
+Olá. Nesse tutorial vou ensinar como aplicar um Toast em seu projeto com a atividade Java. Bem simples, veja o exemplo abaixo:
+
+Toast.makeText(this, "Hello World!!", Toast.LENGTH_SHORT).show();
+
+Dessa forma. Bom, é isso, dúvidas de seu FeedBack...

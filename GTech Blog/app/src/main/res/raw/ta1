@@ -1,0 +1,6 @@
+Olá. Nesse tutorial vou 
+ensinar como mudar local de instalação interna para em seu Android. Para isso precisamos baixar o Android SDK. Após tudo pronto, procure na pasta do programa a pasta " ADB ". Nela estão os arquivos necessários para a operação. Conecte seu Android ao Computador com o USB, clique com o botão direito do mouse no adb.exe e clique em abrir janela de comando. Ao abrir digite:
+
+adb shell pm setInstallocation2
+
+De enter. Pronto! O local de instalação foi alterado com sucesso. Dúvidas de seu FeedBack...

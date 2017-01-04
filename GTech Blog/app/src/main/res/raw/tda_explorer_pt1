@@ -1,0 +1,49 @@
+Olá. Nesse tutorial vou ensinar como criar um explorador de arquivos. Nessa parte, vamos listar os arquivos do cartão SD interno do android e programar para abrir pastas. Primeiramente vamos criar o método que vai listar os items do SD card do android. Antes vamos no manifesto e colocamos a permissão:
+
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+Com essa permissão podemos acessar os items do SD card. Agora vamos preparar o método de listar:
+
+package com.app;
+import android.app.*;
+import android.os.*;
+import android.content.*;
+import java.io.*;
+
+public class nome extends ListActivity {
+// nosso ArrayList
+private ArrayList<String> items = new ArrayList<String>();
+
+public void onCreate(Bundle m){
+  super.onCreate(m);
+// método que chama a listagem
+try{
+listar();
+} catch (IOException e){
+}
+}
+// criando o método listar
+public void listar(){
+  // acessando o diretório
+File dir = new File(Environment.getExternalStorageDirectory(), "");
+// método File[] com array que lista os items
+File[] dr = dir.listFiles();
+// instancia que vai anexar os métodos a seguir:
+if(dr != null){
+int length = dr.length;
+for(int i=0; l<length; ++i){
+// Objeto que vamos usar com nossa arraylist
+File f = dr[i];
+if(f.isDirectory()){
+// listar só o que é diretório
+items.add(f.getName());
+}
+}
+// Adapter da lista
+ArrayAdapter ad = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
+setListAdapter(ad);
+}
+}
+}
+
+Calma. Agora o app está listando as pastas. A segunda parte vai ficar para a parte 2, para não ficar muito extenso. Dúvidas de seu feedback...

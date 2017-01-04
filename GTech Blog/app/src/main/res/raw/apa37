@@ -1,0 +1,14 @@
+Este aplicativo contém um conjunto de ferramentas pequenas: uma lanterna (widget também), um conversor de unidades, um temporizador, um cronômetro, uma bússola um nível de bolha, uma calculadora, uma lupa (Android 2.2 + necessário), um espelho (Android 2.3 + e câmera frontal necessário) e uma régua.
+Essencialmente, é um Android "canivete suíço".
+Cada ferramenta faz o que é suposto fazer. Não há espaço para efeitos especiais como 3d bússola, nível falando, lanterna psicadélico etc: o objetivo é ter um leve, rápido e fácil de usar conjunto de ferramentas, um "toque" de distância de sua tela inicial.
+Este aplicativo é a metade do tamanho de uma "ferramenta autônoma" comum como uma bússola, uma lanterna ou uma lupa. Desta forma, você vai economizar uma grande quantidade de espaço em disco. Você vai economizar o consumo de rede também, não apenas para o primeiro download, mas para cada atualização também.
+Ele não requer acesso à rede, a permissão para gravar na memória flash ou a permissão para ler seus contatos.
+Sugestões, como novos recursos para implementar, novas ferramentas, etc. são bem-vindos. Se você quiser contribuir com uma tradução, por favor, avise-nos enviando-nos um e-mail;)
+Se você encontrar um bug, por favor contacte-nos através do "Relatório de Bug" função de menu principal.
+Nota: se você escrever um comentário no Android Market sem enviar-nos um e-mail, é difícil para nós para resolver o problema, porque normalmente precisamos de algumas informações (como tipo smartphone e versão, uma forma de replicar o problema, etc.)
+Nota:
+- Dependendo dos recursos de seu smartphone de hardware, algumas ferramentas podem não estar presentes
+- A permissão para usar a câmera é necessário para ligar a câmera flash LED. Alguns smartphones (por exemplo, o Google Nexus S) não acender o LED flash se a câmara não está em execução. Se você verificar os aplicativos lanterna mais populares, você vai descobrir que todos eles exigem essa permissão. O Android canivete não tiro fotos, não grava informações multimídia para o cartão de memória flash e não envia qualquer coisa na internet: ele não exige a permissão de rede em tudo.
+- Este aplicativo foi lançado em maio de 2011 com o nome de "canivete suíço". Por causa de uma violação de direitos autorais que recentemente mudou o nome para canivete para Android.
+
+O robô Android é reproduzido ou modificado de trabalho criado e compartilhado por Google e usado de acordo com os termos descritos na Creative Commons Attribution 3.0 License.

@@ -1,0 +1,36 @@
+Olá. Nesse tutorial vou ensinar como abrir documento de texto na pasta RAW. Para isso precisamos importar o io do java. Também precisamos dar uma entrada e saída do método que vai abrir o documento definido com:
+
+- InputStream ( Entrada )
+- ByteArrayOutputStream ( Saída do documento )
+
+No caso da pasta raw precisamos escrever esse método em uma String. Pois nessa String é que vai conter o objeto a ser instanceado. Veja o exemplo abaixo:
+
+package com.app;
+import android.app.*;
+import android.os.*;
+import java.io.*;
+public class m extends Activity{
+	InputStream r;
+	ByteArrayOutputStream c;
+	public void onCreate(Bundle m){
+		super.onCreate(m);
+	}
+	// Definindo a String
+	String txt(){
+		r = getResources().openRawResource(R.raw.file);
+		c = new ByteArrayOutputStream();
+		int i;
+		try{
+			i = r.read();
+			while(i != -1){
+				c.write(i);
+				i = r.read();
+			}
+			c.close();
+		} catch(IOException e){
+		}
+		return c.toString();
+	}
+}
+
+Dessa forma. Agora é só aplicar no seu Widget. Bom, é isso, dúvidas de seu FeedBack...

@@ -1,0 +1,21 @@
+O iProtect é um ótimo programa baseado em MS-DOS
+Veja abaixo os conceitos básicos para o uso do iProtect
+
+1. Deve-se criar uma conta no programa. Para isto digite o comando CD
+em sua tela inicial,  Preencha as seguintes requisições: Nome de usuário e senha.
+(não podem conter caracteres especias (<>\/*&%:"').
+ Após criar a conta você receberá um código
+que apenas você deve ter acesso, pois caso perca sua senha
+deverá ir até a tela inicial do iProtect e digitar o comando PSW
+você será encaminhado ao menu de recuperação de senha
+Será requisitado seu codigo...
+
+Obs.: O iProtect também pode ser executado através do prompt de comando
+ou do executar, apenas digitando "iProtect" [sem aspas], mas para executá-lo desta maneira
+é preciso executá-lo pelo menos uma vez em modo normal, ou seja, apenas abrir
+o arquivo iProtect.cmd)
+
+Bom, este é o básico para o uso do iProtect
+
+Para mais informações sobre seu uso
+Digite o comando AJD em sua tela inicial.

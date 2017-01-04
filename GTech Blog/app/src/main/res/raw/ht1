@@ -1,0 +1,12 @@
+Olá. Nesse tutorial vou ensinar como
+hackear uma rede Wifi. Para isso desenvolvi um socket para quebrar senhas do jeito mais simples, sem muita borocracia. Porêm não vai funcionar para todos os sistemas operacionais.
+Bom, primeiramente você precisa colar todos os arquivos do socket no disco local c do seu PC. Segundo passo é ler o socket no CMD. Para iniciar o socket precisamos digitar:
+
+start scan = socket.c "$_"
+
+Issa linha vai iniciar o socket. Pode ser feito no terminal do Android, digitando start com a fonte de armazenamento.
+Terçeiro passo é selecionar uma rede usando "-p", "-h", assim:
+
+setid -p "REDE" -h QUERY%PASSWORD
+
+Pronto, o scanner começou a jogar os caracteres. Ao final do scaneamento ele para de jogar os caracteres exibindo a senha. Bom, fico por aqui, ficou dúvidas envie seu FeedBack...

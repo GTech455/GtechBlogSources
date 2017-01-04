@@ -1,0 +1,17 @@
+Estes são os drivers da AMD para que você use as placas de vídeo Radeon, Mobility Radeon, e FirePro, além das APUS das séries A, C e E no novo Windows 8 Release Preview. Os drivers são compatíveis com as edições de 32 e 64 bit do novo sistema operacional.
+
+O AMD Catalyst Driver for Windows 8 Release Preview tem como principal recurso o WDDM 1.2 completo. Isso significa que há suporte nativo para 3D estéreo. Há também uma API unificada de vídeo, assim, a reprodução de vídeos é integrada dentro do API do DirectX 11.
+
+O pacote ainda conta com AMD Eyfinity e outras tecnologias da desenvolvedora, como Dual Graphics, CrossFire e Overdrive. Você também encontra o Control Center e o Vision Engine Control Center. Como o AMD Catalyst Driver ainda está em fase de testes, alguns problemas podem acontecer durante o uso de certos recursos.
+
+Placas compatíveis
+Série AMD Radeon HD 7000M;
+Série AMD Radeon HD 6000;
+Série AMD Radeon HD 6000M;
+Série AMD Radeon HD 5000;
+Série AMD FirePro;
+Série AMD FirePro 3D;
+Série AMD Mobility Radeon HD 5000M;
+Série AMD A de APUs;
+Série AMD C de APUs;
+Série AMD E de APUs.

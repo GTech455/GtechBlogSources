@@ -1,0 +1,62 @@
+Olá. Nessa parte vamos criar o método de apagar e copiar arquivos do sdcard do android. Depois de reunir todos os métodos 
+vamos criar os métodos completos, renomear, copiar, excluir, mover, compartilhar, selecionar, etc. Mas por enquanto vamos apenas estudar
+os métodos que vamos usar em nosso explorador de arquivos. Bom, então colocando em nosso app, o método de copiar e excluir arquivos,
+apenas citando exemplos:
+// Para deletar um arquivo
+private void excluir(String inputPath, String inputFile) {
+    try {
+        // deleta o arquivo origem file
+        new File(inputPath + inputFile).delete();  
+
+
+    }
+   catch (FileNotFoundException fnfe1) {
+        Log.e("tag", fnfe1.getMessage());
+    }
+    catch (Exception e) {
+        Log.e("tag", e.getMessage());
+    }
+}
+// Método que copia
+
+private void copiar(String inputPath, String inputFile, String outputPath) {
+
+    InputStream in = null;
+    OutputStream out = null;
+    try {
+
+        //criar o diretório de saída se não existir...
+        File dir = new File (outputPath); 
+        if (!dir.exists())
+        {
+            dir.mkdirs();
+        }
+
+
+        in = new FileInputStream(inputPath + inputFile);        
+        out = new FileOutputStream(outputPath + inputFile);
+
+        byte[] buffer = new byte[1024];
+        int read;
+        while ((read = in.read(buffer)) != -1) {
+            out.write(buffer, 0, read);
+        }
+        in.close();
+        in = null;
+
+            // write the output file (You have now copied the file)
+            out.flush();
+        out.close();
+        out = null;        
+
+    }  catch (FileNotFoundException fnfe1) {
+        Log.e("tag", fnfe1.getMessage());
+    }
+            catch (Exception e) {
+        Log.e("tag", e.getMessage());
+    }
+
+}
+
+Bom, vamos aplicar esses objetos em nosso projeto mais tarde. Como falei, vamos apenas estudá-los. Na próxima parte vamos programar checkbox
+para a listagem dos arquivos e diretórios. Até a próxima...

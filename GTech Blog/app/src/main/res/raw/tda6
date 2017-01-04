@@ -1,0 +1,31 @@
+Olá. Nesse tutorial vou ensinar como criar uma ListView em seu projeto. No exemplo que vou ensinar será uma lista bâsica. Podemos aplicar dois tipos de ArrayList, que pode ser aplicada com uma String[] e até mesmo com ArrayList, impotando o util do java. Para que a lista apareça em seu projeto precisamos definir o Adapter, que será aplicado com setListAdapter. Porêm, sua Activity precisa se extender como ListActivity. Veja o exemplo abaixo:
+
+package com.app;
+import android.app.*;
+import android.os.*;
+import android.widget.*;
+import android.view.*;
+public class m extends ListActivity{
+	public void onCreate(Bundle m){
+		super.onCreate(m);
+		// Aplicando String como ArrayList
+		String[] lt = {
+			"item 1",
+			"item 2"
+		};
+		setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, lt));
+	}
+	// Aplicando ListClick para validar os items
+	public void onListItemClick(ListView l, View v, int p, long id){
+		// Pegando o objeto clicado
+		Object o = getListAdapter().getItem(p);
+		// Convertendo para String, que será o objeto a ser instanceado com o método toString();
+		String lp = o.toString();
+		// Eu uso if para validar, existem outros meios de validação...
+		if(lp.toString() == "item1"){
+			// Mimha Ação...
+		}
+	}
+}
+
+Dessa forma. A lista foi criada com sucesso. Bom, é isso, dúvidas de seu FeedBack...

@@ -1,0 +1,72 @@
+Olá. Nesse tutorial vou ensinar como abrir um documento já existente no sdcard do android. Nesse exemplo vamos criar um aplicativo que vai ter menu de abrir arquivos. E o texto vai ser aberto na área de  texto do App. Veja a montagem da interface grâfica abaixo:
+
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/ct"
+android:layout_width="fill_parent"
+android:gravity="left"
+android:layout_height="fill_parent" />
+
+Pronto! Como se fosse um bloco de notas de abrir e salvar dados. Agora vamos criar um menu para ele que vai ter a ação de abrir arquivos. Vamos a nossa atividade:
+
+package com.app;
+import android.app.*;
+import android.os.*;
+import android.view.*;
+import android.widget.*;
+import java.io.*;
+import android.content.*;
+public class nome_classe extends Activity{
+public void onCreate(Bundle c.persistentState){
+super.onCreate(c.persistentState);
+setContentView(R.layout.main);
+}
+public boolean onCreateOptionsMenu(Menu m){
+// Aplicando menu direto
+m.add("Abrir");
+return true
+}
+public boolean onOptionsItemSelected(MenuItem it){
+// instanceando o item...
+if(it.getTitle() == "Abrir"){
+ // Aqui minha ação de abrir. Vamos definir uma caixa de diálogo, bom, queria ensinar isso mais tarde, mas tudo bem. Essa caixa vai ser inflada com uma caixa de texto. Nela vai ser dado o nome do arquivo a ser aberto.
+final EditText ct = (EditText) findViewById(R.id.ct);
+LayoutInflater li = getLayoutInflater();
+// Inflando com uma view
+View v = li.inflate(R.layout.abrir, null);
+// instanceando a caixa de texto
+final EditText ed = (EditText) v.findViewById(R.id.abrir);
+AlertDialog a = new AlertDialog.Builder(Context).create();
+a.setView(v);
+a.setButton("Abrir", new Dialog.OnClickListene(){
+public void onClick(DialogInterface d, int vi){
+// Aqui a ação de abrir arquivos
+String nome;
+String linha;
+try{
+// colhendo os dados do componente abrir
+nome = ed.getText().toString();
+// Definindo um File para acessar o sdcard
+File f = new File(Environment.getExternalStorageDirectory(), nome);
+// método que abre o arquivo
+BufferedReader br = new BufferedReader(new FileReader(f));
+// método que carrega o arquivo no componente ct
+while((linha = br.readLine)) != null){
+if(!ct.getText().toString.equals("")){
+// quebra de linha
+ct.append("\n");
+}
+ct.append(linha);
+}
+} catch(Exception e){
+// Mensagem de erro...
+e.getMessage();
+}
+}
+});
+a.show();
+}
+return true;
+}
+}
+
+É isso. Assim que tocar no botão de abrir da caixa de diálogo ele vai carregar o arquivo. A caixa de texto ct pode ser a mesma no layout do alertDialog, com id diferênte. É isso, dúvidas de seu feedback...

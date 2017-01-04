@@ -1,0 +1,9 @@
+<resources>
+	<color name="bt_color">#fff</color>
+<color name="tv">#F8D4D4</color>
+	<color name="accent">#CEE5E5</color>
+	<color name="cl">#C3E3D2</color>
+<color name="ct">#D05A5A</color>
+	<color name="btn_press">#171721</color>
+<color name="btn_nm">#863E20</color>
+</resources>

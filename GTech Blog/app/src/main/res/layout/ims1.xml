@@ -1,0 +1,6 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="400dp"
+	android:scrollbars="none"
+	android:background="@drawable/pascal"
+	android:layout_height="wrap_content">
+</HorizontalScrollView>

@@ -1,0 +1,15 @@
+Olá. Nesse tutorial vou ensinar como aplicar setSingleChoiceItems em seu AlertDialog.Builder. Bem simples. Como no tutorial anterior importamos todos os items que vamos usar só vou aplicar a caixa e o ArrayList, também com final. Dessa forma:
+
+final String[] lt ={
+	"item 1"
+};
+AlertDialog.Builder b = new AlertDialog.Builder(this);
+b.setSingleChoiceItems(lt, 0, new Dialog.OnClickListener(){
+	public void onClick(DialogInterface d, int vi){
+		mesmo método de validação do objeto com lt[vi] 
+	}
+});
+b.create();
+b.show();
+
+Dessa forma. Lembrando que o setSingleChoiceItems pode ser inflado com ArrayAdapter. Então, subistitua o lt do evento de click e coloque o enclemento do ArrayAdapter. Bom, é isso, dúvidas de seu feedback...

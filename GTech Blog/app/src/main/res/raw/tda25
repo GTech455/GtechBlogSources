@@ -1,0 +1,63 @@
+Ola. No tutorial anterior aprendemos o valor em branco do formulario. Nesse tutorial vamos inserir valores nele, como tamanho estimado de caracteres e caracteres que serao
+inseridos no formulario. Na nossa atividade Java vamos editar da seguinte forma:
+
+// instanceando os 3 widgets
+EditText
+ ed = (EditText) findViewById (R.id.ed);
+EditText 
+ed2 = (EditText) findViewById (R.id.ed2);
+
+Button  bt = (Button) findViewById (R.id.bt);
+
+// aplicando o evento click listener do botao
+
+bt.setOnClickListener (new OnClickListener (){
+
+public void OnClick (View v{
+
+// Colhendo informacoes dos edit texts
+
+if (!ed.getText ().toString().equals ("")){
+
+// minha acao quando valor em branco...
+
+} else {
+
+// Qualquer erro ocorrido ele vai notificar. Aqui fica a mensagem do erro...
+
+}
+
+// inserindo tamanho...
+if(ed.getText().toString().length() <==8){
+} else {
+mensagem do erro que notifica que nao pode passar de 8 digitos...
+}
+// inserindo valores de caracteres inseridos...
+if(ed.getText().toString().indexOf(Integer.valueOf("a, b, c, 3, @..."){
+} else {
+mensagem que notifica de caracteres invalidos...
+}
+if (ed2.getText().toString().equals ("")){
+
+minha acao desse valor em branco...
+
+} else {
+
+Mensagem de erro...
+}
+
+}
+
+
+// inserindo tamanho...
+if(ed2.getText().toString().length() <==8){
+} else {
+mensagem do erro que notifica que nao pode passar de 8 digitos...
+}
+// inserindo valores de caracteres inseridos...
+if(ed2.getText().toString().indexOf(Integer.valueOf("a, b, c, 3, @..."){
+} else {
+mensagem que notifica de caracteres invalidos...
+}});
+
+Ate ai tudo certo. Estou dividindo por partes. No proximo tutorial vamos abrir um cadastro de clientes com SQL Compat ( mais avancado ), ate a proxima...

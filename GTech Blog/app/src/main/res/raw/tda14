@@ -1,0 +1,26 @@
+Olá. Nesse tutorial vou ensinar como aplicar uma caixa de diálogo em seu projeto com a atividade Java. No exemplo que vou mostrar vou aplicar direto ao projeto. Veja um Pequeno exemplo abaixo:
+
+package app;
+import andridroid.app.*;
+import android.os.*;
+import android.content.*;
+public class m extends Activity{
+	public void onCreate(Bundle m){
+		super.onCreate(m);
+		// Aplicando a caixa com 3 botões
+		AlertDialog a =  new AlertDialog.Builder(this).create();
+		a.setTitle("Alert");
+		a.setIcon(R.pasta.icon);
+		a.setMessage("Hello World!!");
+		a.setButton("#Edit", new DialogInterface.OnClickListener(){
+			public void onClick(DialogInterface d, int vi){
+				// My Action
+			}
+		});
+		a.setButton2(mesmo método)
+		a.setButton3(mesmo método)
+		a.show();
+	}
+}
+
+Pronto! A caixa foi criada com sucesso. Bom, é isso, dúvidas de seu FeedBack...

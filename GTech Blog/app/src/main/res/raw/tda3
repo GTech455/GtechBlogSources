@@ -1,0 +1,12 @@
+Olá. Nesse tutorial vou ensinar como criar pastas no SdCard do Android. Bem simples. Para isso vamos importar o io do java usando File, dessa forma:
+
+import java.io.*;
+File f = new File(Environment.getExternalStorageDirectory() + "/Folder");
+f.exists();
+f.mkdir();
+
+Dessa forma. Agora precisamos declarar a permissão no manifest:
+
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+Pronto! A pasta foi criada com êxito. Bom, é isso, dúvidas comente...

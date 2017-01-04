@@ -1,0 +1,47 @@
+Olá. Nesse tutorial vou ensinar como aplicar Abas em seu projeto. Para isso precisamos de um arquivo XML e da atividade Java. O arquivo XML vai conter o host da Aba, layout pai, TabWidget e um frame layout. Dessa forma:
+
+<TabHost
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@android:id/tabhost"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+<TabWidget
+ android:id="@android:id/tabs"
+ android:layout_width="fill_parent"
+ android:layout_height="wrap_content" />
+ <LinearLayout
+ // Definir orientação vertical, largura e altura>
+ <FrameLayout
+ android:id="@android:id/tabcontent"
+ // Definir largura e altura>
+ //Aqui será definido o layout de cada aba, com uma id
+ <LinearLayout
+ android:id="@+id/tab1"
+ // Definir latgura e altura>
+ </LinearLayout>
+ </FrameLayout>
+ </LinearLayout>
+ </TabHost>
+ 
+ Tudo certo até agora. Agora vamos montar a aba na atividade Java. A atividade Java precisa extender como TabActivity e importar android.app.TabActivity;. Veja o exemplo abaixo:
+ 
+ package app;
+ import android.app.TabActivity;
+ import android.os.*;
+ import android.widget.TabHost.TabSpec;
+ import android.view.*;
+ public class m extends TabActivity{
+ 	public void onCreate(Bundle m){
+ 		super.onCreate(m);
+ 		setContentView(R.layout.tab);
+ 		// Definindo aba
+ 		TabSpec tb = getTabHost().newTabSpec("tab1");
+ 		tb.setIndicator("Aba 1");
+ 		tb.setContent(R.id.tab1);
+ 		getTabHost().addTab(tb);
+ 		getTabHost().setCurrentTab(1);
+ 	}
+ }
+ 
+ Dessa forma. O valor 1 é para não abrir a segunda aba no lugar da primeira. Para criar a segunda aba é só começar do objeto tb a frente. Bom, é issp, dúvidas de seu FeedBack...

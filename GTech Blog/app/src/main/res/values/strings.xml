@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_as">GTech - Assemblers</string>
+	<string name="app_tdw">GTech Blog - Dev Wimdows</string>
+	<string name="app_aps">GTech Blog - Programas Especiais</string>
+	<string name="app_apsa">GTech Blog - Programas Especiais - Android</string>
+	<string name="app_tda">GTech Blog - Dev Android</string>
+	<string name="app_ta">GTech Blog - Tutoriais Android</string>
+	<string name="app_gma">GTech Blog - Games Android</string>
+	<string name="app_gma4">GTech Blog - Games Android - Corrida</string>
+	<string name="app_gma5">GTech Blog - Games Android - Arcade</string>
+	<string name="app_gma6">GTech Blog - Games Android - Esportes</string>
+	<string name="app_gma7">GTech Blog - Games Android - GTArcade RPG</string>
+	<string name="app_gma8">GTech Blog - Games Android - Cassino</string>
+	<string name="app_jogosTiro">GTech Blog - Games Android - Tiro</string>
+	<string name="app_jogosCartas">GTech Blog - Games Android - Cartas</string>
+	<string name="app_jogosEstratégia">GTech Blog - Games Android - Estratégia</string>
+	<string name="app_jogosRPG">GTech Blog - Games Android - RPG</string>
+	<string name="app_jogosSinuca">GTech Blog - Games Android - Sinuca</string>
+	<string name="app_jogosLuta">GTech Blog - Games Android - Luta</string>
+	<string name="app_jogosAcao">GTech Blog - Games Android - Ação</string>
+	<string name="app_extras">GTech Blog - Extras</string>
+	<string name="app_gpc">GTech Blog - Games PC - Ação</string>
+	<string name="app_gpc2">GTech Blog - Games PC - Aventura</string>
+	<string name="app_tiroFPS">GTech Blog - Games PC - Tiro FPS</string>
+	<string name="app_est">GTech Blog - Games PC - Estratégia</string>
+	<string name="app_rp">GTech Blog - Games PC - RPG</string>
+	<string name="app_ct">GTech Blog - Cursores</string>
+<string name="app_win">GTech Blog - Apps Windows</string>
+    <string name="app_name">GTech Blog</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="app_apa">GTech - Apps Android</string>
+    <string name="app_ht">GTech Blog Hacking Tutoriais</string>
+    <string name="hst">GTech Blog Hacking Softwares</string>
+<string name="gtech_gma2">GTech Blog - Games Android</string>
+</resources>

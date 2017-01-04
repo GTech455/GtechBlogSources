@@ -1,0 +1,12 @@
+Olá. Nesse tutorial vou ensinar como criar um 
+MS-DOS ansioso. Primeiramente temos que criar
+um arquivo vázio executável que pode ser:
+
+- .msi
+- .com
+- .exe
+
+Segundo passo. Depois de criado o arquivo, coloque a linha do vírus desejado e salve.
+Agora vamos em " Propriedades ", em " Programa ". Verifique se a linha de comando está correta no qual
+ele vai iniciar e no que vai processar. Por fim, vamos em memória. Em memória defina o valor 2000 para cima. Agora clicamos em Aplicar. O atalho do programa MS-DOS foi criado. 
+Quando é vírus ansioso não adianta excluir que ele volta. Após conectado qualquer dispositivo externo ao computador infectado o vírus vai infectar todo o dispositivo conectado transformando todos os dados da únidade em atalhos inválidos. Bom, fico por aqui, ficou alguma dúvida envie seu FeedBack...

@@ -1,0 +1,15 @@
+Olá. Nesse tutorial vou ensinar como abrir portas 
+do seu modem, bem simples. Para abrir portas do seu modem
+você precisa ter em mãos usuârio e senha da configuração do seu Roteador.
+Caso não tenha, é só ligar para a operadora da internet, solicitar o usuârio e senha que eles
+vão lhe dar. Agora abrimos o CMD e digitamos:
+
+ipconfig
+
+Em Gateway Padrão temos o IP do modem, então
+digitamos:
+
+start ip do modem
+
+De enter. Digite o usuário e senha do modem clique em login. Agora que estamos
+na interface do modem procure por redirecionamento de portas. Nessa opção encontramos o controle de portas abertas em uso na tabela abaixo. Para abrir uma porta clicamos em add ( adicionar ). Agora vamos ao CMD e colhemos o IPV4 do modem, definimos a porta valor 8080, e por fim definimos que porta queremos abrir. É preciso ter moções de portas UDP/TCP, elas são muito importantes. Após atribuir os valores clicamos em save. A porta foi aberta com sucesso. Bom, fico por aqui, dúvidas envie seu FeedBack...
