@@ -27,7 +27,8 @@
         <activity
             android:name="gtechblog455.blogspot.com.app.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/a" />
+            android:theme="@style/a" >
+        </activity>
         <activity
             android:name="gtechblog455.blogspot.com.app.apa"
             android:label="@string/app_apa"

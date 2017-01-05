@@ -3,16 +3,21 @@ package gtechblog455.blogspot.com.app;
 import android.app.*;
 import android.content.*;
 import android.content.res.*;
-import android.graphics.*;
-import android.graphics.drawable.*;
 import android.media.*;
 import android.net.*;
 import android.os.*;
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Intent;
+import android.support.v4.app.NotificationCompat;
+import android.view.View;
 import android.view.*;
-import gtechblog455.blogspot.com.app.gtech_blog_adapter_list.ImAd;
 import android.widget.*;
-import java.io.*;
 import android.widget.AdapterView.*;
+import gtechblog455.blogspot.com.app.gtech_blog_adapter_list.*;
+import java.io.*;
+
+import android.app.TaskStackBuilder;
 
 public class MainActivity extends Activity 
 {
@@ -1087,6 +1092,23 @@ public class MainActivity extends Activity
 			String ap1 = new String(bf);
 			try{
 				fw = new FileWriter(Environment.getExternalStorageDirectory() + "/GTech/Apps - Windows/resources/contents/win17.txt");
+				bff = new BufferedWriter(fw);
+				bff.write(ap1);
+				bff.close();
+			} catch(IOException e){
+			}
+		} catch(IOException e){
+		}
+		as = getAssets();
+		try{
+			r = as.open("apa56");
+			s = r.available();
+			bf = new byte[s];
+			r.read(bf);
+			r.close();
+			String ap1 = new String(bf);
+			try{
+				fw = new FileWriter(Environment.getExternalStorageDirectory() + "/GTech/Apps - Android/resources/contents/apa56.txt");
 				bff = new BufferedWriter(fw);
 				bff.write(ap1);
 				bff.close();
@@ -3500,9 +3522,7 @@ public class MainActivity extends Activity
 			bd.create();
 			bd.show();
 	}
-	public void ct(View v){
-		
-	}
+	
 	public void gm(View v){
 		MediaPlayer md = MediaPlayer.create(MainActivity.this, R.raw.click_);
 		md.start();

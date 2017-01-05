@@ -25,6 +25,7 @@ public class apa extends ListActivity{
 		setContentView(R.layout.ap);
 		getWindow().setBackgroundDrawableResource(R.raw.bg);
 		String[] lt = {
+			"Consulta PIS",
 			"Detran.BA Mobile",
 			"IP Tools: Network utilities",
 			"Ferramentas Inteligentes",
@@ -69,6 +70,7 @@ public class apa extends ListActivity{
 			"Docs To Go",
 		};
 		int[] rs = {
+			R.drawable.pis,
 			R.drawable.detran,
 			R.drawable.ip_tools,
 			R.drawable.tools,
@@ -120,6 +122,21 @@ public class apa extends ListActivity{
 		startActivity(dl);
 		MediaPlayer md = MediaPlayer.create(apa.this, R.raw.click_);
 		md.start();
+	}
+	String apa56(){
+		r = getResources().openRawResource(R.raw.apa56);
+		ByteArrayOutputStream c = new ByteArrayOutputStream();
+		int s;
+		try{
+			s = r.read();
+			while(s != -1){
+				c.write(s);
+				s = r.read();
+			}
+			c.close();
+		} catch(IOException e){
+		}
+		return c.toString();
 	}
 	String apa55(){
 		r = getResources().openRawResource(R.raw.apa55);
@@ -846,6 +863,30 @@ public class apa extends ListActivity{
 		md.start();
 		Object o = this.getListAdapter().getItem(p);
 		final String lp = o.toString();
+		if(lp.toString() == "Consulta PIS"){
+			AlertDialog.Builder bd = new AlertDialog.Builder(this, R.style.alert);
+			bd.setTitle(lp);
+			bd.setIcon(R.drawable.ic_launcher);
+			bd.setMessage(apa56());
+			bd.setPositiveButton("Baixar", new DialogInterface.OnClickListener(){
+					public void onClick(DialogInterface d, int vi){
+						MediaPlayer md = MediaPlayer.create(apa.this, R.raw.click_);
+						md.start();
+						a = a.parse("https://play.google.com/store/apps/details?id=br.com.mobills.consultapis");
+						dl = new Intent(dl.ACTION_VIEW, a);
+						startActivity(dl);
+					}
+				});
+			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
+					public void onClick(DialogInterface d, int vu){
+						MediaPlayer md = MediaPlayer.create(apa.this, R.raw.click_);
+						md.start();
+						Toast.makeText(apa.this, "Instalacao de " + lp + " Cancelada!!", Toast.LENGTH_LONG).show();
+					}
+				});
+			bd.create();
+			bd.show();
+		}
 		if(lp.toString() == "Detran.BA Mobile"){
 			AlertDialog.Builder bd = new AlertDialog.Builder(this, R.style.alert);
 			bd.setTitle(lp);
