@@ -23,10 +23,12 @@ public class JogosEstrategia extends ListActivity
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		setContentView(R.layout.gm);
 		int[] rs = {
+			R.drawable.war_commander,
 			R.drawable.clash,
 			R.drawable.strike,
 		};
 		String[] lt = {
+			"War Commander: Rogue Assault",
 			"Clash of Clans",
 			"Mobile Strike",
 		};
@@ -48,6 +50,27 @@ public class JogosEstrategia extends ListActivity
 		String lp = o.toString();
 		md = md.create(JogosEstrategia.this, R.raw.click_);
 		md.start();
+		if(lp.toString() == "War Commander: Rogue Assault"){
+			Toast.makeText(this, "Apenas Download!!", Toast.LENGTH_LONG).show();
+			final String[] h ={
+				"DOWNLOAD"
+			};
+			ArrayAdapter ad = new ArrayAdapter(this, R.layout.dl, R.id.tv, h);
+			AlertDialog.Builder bd = new AlertDialog.Builder(this);
+			bd.setSingleChoiceItems(ad, 0, new DialogInterface.OnClickListener(){
+					public void onClick(DialogInterface d, int vi){
+						if(h[vi].toString() == "DOWNLOAD"){
+							md = md.create(JogosEstrategia.this, R.raw.click_);
+							md.start();
+							a = a.parse("https://play.google.com/store/apps/details?id=com.kixeye.wcm");
+							dl = new Intent(dl.ACTION_VIEW, a);
+							startActivity(dl);
+						}
+					}
+				});
+			bd.create();
+			bd.show();
+		}
 		if(lp.toString() == "Mobile Strike"){
 			Toast.makeText(this, "Apenas Download!!", Toast.LENGTH_LONG).show();
 			final String[] h ={

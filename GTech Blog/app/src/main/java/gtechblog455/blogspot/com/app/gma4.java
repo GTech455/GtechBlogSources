@@ -21,6 +21,7 @@ public class gma4 extends ListActivity
 		getWindow().setBackgroundDrawableResource(R.raw.bg);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		int[] r = {
+			R.drawable.hot_wheels,
 			R.drawable.clash_of_crime_two,
 			R.drawable.clash_of_crime,
 			R.drawable.aen,
@@ -40,6 +41,7 @@ public class gma4 extends ListActivity
 			R.drawable.raging_two,
 		};
 		String[] lt = {
+			"Hot Wheels: Race Off",
 			"Clash of Crime Mad City War Go",
 			"Clash of Crime Mad San Andreas",
 			"AEN Hill Climb Bike Race 2017",
@@ -72,6 +74,27 @@ public class gma4 extends ListActivity
 		String lp = o.toString();
 		md = md.create(gma4.this, R.raw.click_);
 		md.start();
+		if(lp.toString() == "Hot Wheels: Race Off"){
+			Toast.makeText(this, "Apenas Download!!", Toast.LENGTH_LONG).show();
+			final String[] h ={
+				"DOWNLOAD"
+			};
+			ArrayAdapter ad = new ArrayAdapter(this, R.layout.dl, R.id.tv, h);
+			AlertDialog.Builder bd = new AlertDialog.Builder(this);
+			bd.setSingleChoiceItems(ad, 0, new DialogInterface.OnClickListener(){
+					public void onClick(DialogInterface d, int vi){
+						if(h[vi].toString() == "DOWNLOAD"){
+							md = md.create(gma4.this, R.raw.click_);
+							md.start();
+							a = a.parse("https://play.google.com/store/apps/details?id=com.hutchgames.hotwheels");
+							dl = new Intent(dl.ACTION_VIEW, a);
+							startActivity(dl);
+						}
+					}
+				});
+			bd.create();
+			bd.show();
+		}
 		if(lp.toString() == "AEN Hill Climb Bike Race 2017"){
 			Toast.makeText(this, "Apenas Download!!", Toast.LENGTH_LONG).show();
 			final String[] h ={
