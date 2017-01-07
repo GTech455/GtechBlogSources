@@ -24,6 +24,7 @@ public class JogosRPG extends ListActivity
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		setContentView(R.layout.gm);
 		int[] rs = {
+			R.drawable.final_fantasy,
 			R.drawable.avabel,
 			R.drawable.soul,
 			R.drawable.rucoy,
@@ -31,6 +32,7 @@ public class JogosRPG extends ListActivity
 			R.drawable.durango,
 		};
 		String[] lt = {
+			"FINAL FANTASY Record Keeper",
 			"RPG AVABEL ação MMO online RPG",
 			"SoulCraft - Action RPG",
 			"Rucoy Online - MMORPG - MMO",
@@ -55,6 +57,27 @@ public class JogosRPG extends ListActivity
 		String lp = o.toString();
 		md = md.create(JogosRPG.this, R.raw.click_);
 		md.start();
+		if(lp.toString() == "FINAL FANTASY Record Keeper"){
+			Toast.makeText(this, "Apenas Download!!", Toast.LENGTH_LONG).show();
+			final String[] h ={
+				"DOWNLOAD"
+			};
+			ArrayAdapter ad = new ArrayAdapter(this, R.layout.dl, R.id.tv, h);
+			AlertDialog.Builder bd = new AlertDialog.Builder(this);
+			bd.setSingleChoiceItems(ad, 0, new DialogInterface.OnClickListener(){
+					public void onClick(DialogInterface d, int vi){
+						if(h[vi].toString() == "DOWNLOAD"){
+							md = md.create(JogosRPG.this, R.raw.click_);
+							md.start();
+							a = a.parse("https://play.google.com/store/apps/details?id=com.dena.west.FFRK");
+							dl = new Intent(dl.ACTION_VIEW, a);
+							startActivity(dl);
+						}
+					}
+				});
+			bd.create();
+			bd.show();
+		}
 		if(lp.toString() == "RPG AVABEL ação MMO online RPG"){
 			Toast.makeText(this, "Apenas Download!!", Toast.LENGTH_LONG).show();
 			final String[] h ={
