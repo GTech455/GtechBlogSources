@@ -21,6 +21,7 @@ public class gma5 extends ListActivity
 		getWindow().setBackgroundDrawableResource(R.raw.bg);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		int[] rs = {
+			R.drawable.grumpy,
 			R.drawable.disjuntor,
 			R.drawable.ben,
 			R.drawable.iron,
@@ -41,6 +42,7 @@ public class gma5 extends ListActivity
 			R.drawable.jogos_em,
 		};
 		final String[] lt = {
+			"Grumpy Cat: Um Jogo Horrível",
 			"Disjuntor estrela de tijolos",
 			"Ben 10 Xenodrome",
 			"Iron Avenger - No Limits",
@@ -73,6 +75,27 @@ public class gma5 extends ListActivity
 		String lp = o.toString();
 		md = md.create(gma5.this, R.raw.click_);
 		md.start();
+		if(lp.toString() == "Grumpy Cat: Um Jogo Horrível"){
+			Toast.makeText(this, "Apenas Download!!", Toast.LENGTH_LONG).show();
+			final String[] h ={
+				"DOWNLOAD"
+			};
+			ArrayAdapter ad = new ArrayAdapter(this, R.layout.dl, R.id.tv, h);
+			AlertDialog.Builder bd = new AlertDialog.Builder(this);
+			bd.setSingleChoiceItems(ad, 0, new DialogInterface.OnClickListener(){
+					public void onClick(DialogInterface d, int vi){
+						if(h[vi].toString() == "DOWNLOAD"){
+							md = md.create(gma5.this, R.raw.click_);
+							md.start();
+							a = a.parse("https://play.google.com/store/apps/details?id=com.luckykat.grumpycat");
+							dl = new Intent(dl.ACTION_VIEW, a);
+							startActivity(dl);
+						}
+					}
+				});
+			bd.create();
+			bd.show();
+		}
 		if(lp.toString() == "Disjuntor estrela de tijolos"){
 			Toast.makeText(this, "Apenas Download!!", Toast.LENGTH_LONG).show();
 			final String[] h ={
