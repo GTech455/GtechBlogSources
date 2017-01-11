@@ -21,6 +21,7 @@ public class gma extends ListActivity{
 	   getWindow().setBackgroundDrawableResource(R.raw.bg);
 	   getActionBar().setDisplayHomeAsUpEnabled(true);
 	   int[] rs = {
+		   R.drawable.nr,
 		   R.drawable.febre_panda,
 		   R.drawable.jewel_journey,
 		   R.drawable.frenesi,
@@ -63,6 +64,7 @@ public class gma extends ListActivity{
 		   R.drawable.blast,
 	   };
 	   String[] lt = {
+		   "NR Shooter™ - Tiro às Bolhas",
 		   "Febre de bolha panda",
 		   "Jewel Journey",
 		   "Frenesi de doces - Candy Mania",
@@ -111,6 +113,27 @@ public class gma extends ListActivity{
 		String lp = o.toString();
 		md = md.create(gma.this, R.raw.click_);
 		md.start();
+		if(lp.toString() == "NR Shooter™ - Tiro às Bolhas"){
+			Toast.makeText(gma.this, "Apenas Download!!", Toast.LENGTH_LONG).show();
+			final String[] lt = {
+				"DOWNLOAD"
+			};
+			ArrayAdapter as = new ArrayAdapter(gma.this, R.layout.dl, R.id.tv, lt);
+			AlertDialog.Builder bd = new AlertDialog.Builder(this);
+			bd.setSingleChoiceItems(as, 0, new DialogInterface.OnClickListener(){
+					public void onClick(DialogInterface d, int vi){
+						if(lt[vi].toString() == "DOWNLOAD"){
+							md = md.create(gma.this, R.raw.click_);
+							md.start();
+							a = a.parse("https://play.google.com/store/apps/details?id=com.nrsmagic.shooter");
+							dl = new Intent(dl.ACTION_VIEW, a);
+							startActivity(dl);
+						}
+					}
+				});
+			bd.create();
+			bd.show();
+		}
 		if(lp.toString() == "Febre de bolha panda"){
 			Toast.makeText(gma.this, "Apenas Download!!", Toast.LENGTH_LONG).show();
 			final String[] lt = {
