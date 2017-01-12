@@ -20,6 +20,7 @@ public class gma2 extends ListActivity{
 	   getWindow().setBackgroundDrawableResource(R.raw.bg);
 	  getActionBar().setDisplayHomeAsUpEnabled(true);
 	  int[] rs = {
+		   R.drawable.distraint,
 		   R.drawable.pet_heroes,
 		   R.drawable.masha_temple,
 		   R.drawable.masha,
@@ -63,6 +64,7 @@ public class gma2 extends ListActivity{
 		  R.drawable.malvado,
 	  };
 	  String[] lt = {
+		   "DISTRAINT: Pocket Pixel Horror",
 		   "Pet Heroes: Puzzle Adventure",
 		   "Masha Temple Adventure 2",
 		   "Super Masha 2 Selva Mundial ★",
@@ -112,6 +114,27 @@ public class gma2 extends ListActivity{
 	   String lp = o.toString();
 	   md = md.create(gma2.this, R.raw.click_);
 	   md.start();
+	   if(lp.toString() == "DISTRAINT: Pocket Pixel Horror"){
+		   Toast.makeText(this, "Apenas Download!!", Toast.LENGTH_LONG).show();
+		   final String[] h ={
+			   "DOWNLOAD"
+		   };
+		   ArrayAdapter ad = new ArrayAdapter(this, R.layout.dl, R.id.tv, h);
+		   AlertDialog.Builder bd = new AlertDialog.Builder(this);
+		   bd.setSingleChoiceItems(ad, 0, new DialogInterface.OnClickListener(){
+				   public void onClick(DialogInterface d, int vi){
+					   if(h[vi].toString() == "DOWNLOAD"){
+						   md = md.create(gma2.this, R.raw.click_);
+						   md.start();
+						   a = a.parse("https://play.google.com/store/apps/details?id=com.winterveilstudios.DISTRAINT");
+						   dl = new Intent(dl.ACTION_VIEW, a);
+						   startActivity(dl);
+					   }
+				   }
+			   });
+		   bd.create();
+		   bd.show();
+	   }
 	   if(lp.toString() == "Pet Heroes: Puzzle Adventure"){
 		   Toast.makeText(this, "Apenas Download!!", Toast.LENGTH_LONG).show();
 		   final String[] h ={
