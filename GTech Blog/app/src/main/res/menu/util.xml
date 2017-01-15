@@ -3,6 +3,7 @@
 	<item
 		android:showAsAction="ifRoom"
 		android:id="@+id/fe"
+		android:textColor="#32cd32"
 		android:title="Reportar Problemas" />
     
 </menu>

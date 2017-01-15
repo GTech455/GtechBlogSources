@@ -21,6 +21,8 @@ public class gma extends ListActivity{
 	   getWindow().setBackgroundDrawableResource(R.raw.bg);
 	   getActionBar().setDisplayHomeAsUpEnabled(true);
 	   int[] rs = {
+		   R.drawable.ab_blast,
+		   R.drawable.bubble_witch_,
 		   R.drawable.nr,
 		   R.drawable.febre_panda,
 		   R.drawable.jewel_journey,
@@ -64,6 +66,8 @@ public class gma extends ListActivity{
 		   R.drawable.blast,
 	   };
 	   String[] lt = {
+		   "AB Blast",
+		   "Bubble Witch 3 Saga",
 		   "NR Shooter™ - Tiro às Bolhas",
 		   "Febre de bolha panda",
 		   "Jewel Journey",
@@ -113,6 +117,48 @@ public class gma extends ListActivity{
 		String lp = o.toString();
 		md = md.create(gma.this, R.raw.click_);
 		md.start();
+		if(lp.toString() == "AB Blast"){
+			Toast.makeText(gma.this, "Apenas Download!!", Toast.LENGTH_LONG).show();
+			final String[] lt = {
+				"DOWNLOAD"
+			};
+			ArrayAdapter as = new ArrayAdapter(gma.this, R.layout.dl, R.id.tv, lt);
+			AlertDialog.Builder bd = new AlertDialog.Builder(this);
+			bd.setSingleChoiceItems(as, 0, new DialogInterface.OnClickListener(){
+					public void onClick(DialogInterface d, int vi){
+						if(lt[vi].toString() == "DOWNLOAD"){
+							md = md.create(gma.this, R.raw.click_);
+							md.start();
+							a = a.parse("https://play.google.com/store/apps/details?id=com.rovio.blast");
+							dl = new Intent(dl.ACTION_VIEW, a);
+							startActivity(dl);
+						}
+					}
+				});
+			bd.create();
+			bd.show();
+		}
+		if(lp.toString() == "Bubble Witch 3 Saga"){
+			Toast.makeText(gma.this, "Apenas Download!!", Toast.LENGTH_LONG).show();
+			final String[] lt = {
+				"DOWNLOAD"
+			};
+			ArrayAdapter as = new ArrayAdapter(gma.this, R.layout.dl, R.id.tv, lt);
+			AlertDialog.Builder bd = new AlertDialog.Builder(this);
+			bd.setSingleChoiceItems(as, 0, new DialogInterface.OnClickListener(){
+					public void onClick(DialogInterface d, int vi){
+						if(lt[vi].toString() == "DOWNLOAD"){
+							md = md.create(gma.this, R.raw.click_);
+							md.start();
+							a = a.parse("https://play.google.com/store/apps/details?id=com.king.bubblewitch3");
+							dl = new Intent(dl.ACTION_VIEW, a);
+							startActivity(dl);
+						}
+					}
+				});
+			bd.create();
+			bd.show();
+		}
 		if(lp.toString() == "NR Shooter™ - Tiro às Bolhas"){
 			Toast.makeText(gma.this, "Apenas Download!!", Toast.LENGTH_LONG).show();
 			final String[] lt = {
