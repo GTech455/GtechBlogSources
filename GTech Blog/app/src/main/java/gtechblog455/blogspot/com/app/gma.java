@@ -131,7 +131,7 @@ public class gma extends ListActivity{
 							md.start();
 							a = a.parse("https://play.google.com/store/apps/details?id=com.rovio.blast");
 							dl = new Intent(dl.ACTION_VIEW, a);
-							startActivity(dl);
+							startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 						}
 					}
 				});

@@ -6,7 +6,7 @@
 
 		<!-- ActionBar styles -->
 		<style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
-			<item name="android:background">#2A3B39</item>
+			<item name="android:background">#0D3814</item>
 			<item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
 			<item name="android:subtitleTextStyle">@style/MyActionBarSubTitleText</item>
 		</style>
@@ -14,13 +14,13 @@
 </style>
 		<!-- ActionBar title text -->
 		<style name="MyActionBarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title.Inverse">
-			<item name="android:textColor">#32cd32</item>
+			<item name="android:textColor">#fff</item>
 			<item name="android:textStyle">bold</item>
 		</style>
 
 		<!-- ActionBar subtitle text -->
 		<style name="MyActionBarSubTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle">
-			<item name="android:textColor">#32cd32</item>
+			<item name="android:textColor">#fff</item>
 			<item name="android:textStyle">bold</item>
 		</style>
 		<style name="lst">
