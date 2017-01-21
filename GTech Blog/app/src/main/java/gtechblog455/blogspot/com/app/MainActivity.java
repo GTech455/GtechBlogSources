@@ -3651,7 +3651,7 @@ public class MainActivity extends Activity
 							{"dthhack@gmail.com"});
 				fe.putExtra(Intent.EXTRA_SUBJECT, "Reportar Erros");
 				fe.putExtra(Intent.EXTRA_TEXT, "Explique o erro...");
-				startActivity(fe);
+				startActivity(Intent.createChooser(fe, "Por favor, selecione seu provedor \n de Email e envie sua reclamação..."));
 		}
 		return true;
 	}

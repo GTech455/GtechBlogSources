@@ -22,6 +22,7 @@ public class JogosCartas extends ListActivity
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		setContentView(R.layout.gm);
 		int[] rs = {
+			R.drawable.duel,
 			R.drawable.order_chaos_online,
 			R.drawable.order_chaos_two,
 			R.drawable.texas,
@@ -29,6 +30,7 @@ public class JogosCartas extends ListActivity
 			R.drawable.order,
 		};
 		String[] lt = {
+			"Yu-Gi-Oh! Duel Links",
 			"Order & Chaos Online",
 			"Order & Chaos 2: Redemption",
 			"Texas Hold'em Poker",
@@ -53,6 +55,27 @@ public class JogosCartas extends ListActivity
 		String lp = o.toString();
 		md = md.create(JogosCartas.this, R.raw.click_);
 		md.start();
+		if(lp.toString() == "Yu-Gi-Oh! Duel Links"){
+			Toast.makeText(this, "Apenas Download!!", Toast.LENGTH_LONG).show();
+			final String[] h ={
+				"DOWNLOAD"
+			};
+			ArrayAdapter ad = new ArrayAdapter(this, R.layout.dl, R.id.tv, h);
+			AlertDialog.Builder bd = new AlertDialog.Builder(this);
+			bd.setSingleChoiceItems(ad, 0, new DialogInterface.OnClickListener(){
+					public void onClick(DialogInterface d, int vi){
+						if(h[vi].toString() == "DOWNLOAD"){
+							md = md.create(JogosCartas.this, R.raw.click_);
+							md.start();
+							a = a.parse("https://play.google.com/store/apps/details?id=jp.konami.duellinks");
+							dl = new Intent(dl.ACTION_VIEW, a);
+							startActivity(dl);
+						}
+					}
+				});
+			bd.create();
+			bd.show();
+		}
 		if(lp.toString() == "Order & Chaos Online"){
 			Toast.makeText(this, "Apenas Download!!", Toast.LENGTH_LONG).show();
 			final String[] h ={

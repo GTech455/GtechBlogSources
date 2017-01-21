@@ -874,7 +874,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=br.com.mobills.consultapis");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -898,7 +898,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=br.gov.ba.detran");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -922,7 +922,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.ddm.iptools");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -946,7 +946,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.pcmehanik.smarttoolkit");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -970,7 +970,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.chessking.android.learn.matein1");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -994,7 +994,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.sp41ky.updatesw");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1018,7 +1018,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=la.droid.qr");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1042,7 +1042,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=xcxin.filexpert");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1066,7 +1066,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.teamviewer.teamviewer.market.mobile");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1090,7 +1090,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.winzip.android");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1114,7 +1114,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=org.joa.zipperplus7v2");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1138,7 +1138,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.avast.android.cleaner");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1162,7 +1162,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.rioapps.ares.musica");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1186,7 +1186,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=br.com.gerenciadorfinanceiro.controller");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1210,7 +1210,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.sevencsolutions.myfinances");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1234,7 +1234,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.venancio.hiago.bushorario");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1258,7 +1258,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=co.com.utilitiesAndroid");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1282,7 +1282,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.digital_and_dreams.android.android_army_knife");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1306,7 +1306,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.virusfighter.android");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1330,7 +1330,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.mathpad.mobile.android.wt.unit");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1354,7 +1354,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("http://sites.google.com/site/gbtec92/docs.apk");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1378,7 +1378,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("http://sites.google.com/site/gbtec92/assistant.apk");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1402,7 +1402,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("http://sites.google.com/site/gbtec92/flash.apk");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1426,7 +1426,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.adobe.reader");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1450,7 +1450,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=it.medieval.dualfm_xt");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1475,7 +1475,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.springwalk.mediaconverter&hl=pt");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1499,7 +1499,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.nll.screenrecorder");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1523,7 +1523,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.struchev.gif_creator");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1548,7 +1548,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.onto.notepad");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1572,7 +1572,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.electricsheep.paint");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1596,7 +1596,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.resonancelab.unrar");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1620,7 +1620,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.jb.gokeyboard.theme.tmeflames&hl=pt_BR&referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dteclado+fogo+para+android&pcampaignid=APPU_1__8I3Vv2rEsSgwATB7a2wDw");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1644,7 +1644,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=ru.meefik.linuxdeploy");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1668,7 +1668,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.buak.Link2SD");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1692,7 +1692,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("http://www.google.com.br/url?q=https://play.google.com/store/apps/details%3Fid%3Dcom.gau.go.launcherex%26hl%3Dpt_BR&sa=U&ved=0CAsQFjAAahUKEwj58ZHN1vzHAhXDkZAKHW1CCCQ&sig2=tzCudhyYG42YL6qJm1BGHg&usg=AFQjCNGn-E88bCtSiEIPGr8tNvdc3WMduw");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1716,7 +1716,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("http://www.google.com.br/url?q=https://play.google.com/store/apps/details%3Fid%3Dcom.mobint.hololauncher.hd%26hl%3Dpt_BR&sa=U&ved=0CAsQFjAAahUKEwj-gPS11vzHAhUKkpAKHWRGD8A&sig2=mbw0a4zq9ynJtNUI1IJvbA&usg=AFQjCNG-V3zmFXi7yIS4uJ-fhpmmu1GXBA");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1740,7 +1740,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("http://www.google.com.br/url?q=https://play.google.com/store/apps/details%3Fid%3Dcom.google.android.apps.translate%26hl%3Dpt_BR&sa=U&ved=0CBUQFjAAahUKEwiR19_s1vzHAhXCFJAKHb1GCa8&sig2=i8g2UqasSSQDt4EgpAOTow&usg=AFQjCNHH7l13H4TORVFKMs-uAG_92IBQug");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1764,7 +1764,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.jb.gokeyboard.theme.tmeflames&hl=pt_BR&referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dteclado+fogo+para+android&pcampaignid=APPU_1__8I3Vv2rEsSgwATB7a2wDw");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1788,7 +1788,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("http://www.google.com.br/url?q=https://play.google.com/store/apps/details%3Fid%3Djackpal.androidterm%26hl%3Dpt_BR&sa=U&ved=0CAsQFjAAahUKEwig46r61vzHAhUFQ5AKHRL3AMg&sig2=Vu0-PBJ-EsI8v9G5K217Ow&usg=AFQjCNH2-07jrP7gyRzcXb7C8IX5NIOK4Q");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1812,7 +1812,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.henrythompson.quoda");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1836,7 +1836,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.aide.ui&hl=pt_BR&referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Daide+android&pcampaignid=APPU_1_udcgVoX3GILReJbfulA");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1860,7 +1860,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=org.mozilla.firefox&hl=pt_BR&referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dfirefox+android&pcampaignid=APP,U_1_Z9ggVqIYjfF69OmO2AM");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1884,7 +1884,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.dianxinos.dxbs");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1908,7 +1908,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://www.google.com.br/url?q=https://play.google.com/store/apps/details%3Fid%3Dcom.picsart.studio%26hl%3Dpt_BR&sa=U&ved=0CAsQFjAAahUKEwil76SP_enIAhXFH5AKHSXIBh4&usg=AFQjCNEjVXgwfIzqhVfBWEZiRxzf2LxdNw");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1932,7 +1932,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.easymobile.lan.scanner");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
@@ -1956,7 +1956,7 @@ public class apa extends ListActivity{
 						md.start();
 						a = a.parse("https://play.google.com/store/apps/details?id=com.enlightment.voicerecorder&hl=pt_BR&referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dgravador+de+v%C3%B3z+avan%C3%A7ado&pcampaignid=APPU_1_gONGVpyCNoyXwgSxyq-QAw");
 						dl = new Intent(dl.ACTION_VIEW, a);
-						startActivity(dl);
+						startActivity(Intent.createChooser(dl, "Qual sua opção??"));
 					}
 				});
 			bd.setNegativeButton("Cancelar", new DialogInterface.OnClickListener(){
