@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_marginTop="15dp">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/tvprod"
+			android:textSize="20sp"
+			android:layout_marginLeft="10dp"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_marginLeft="150dp"
+			android:textSize="20sp"
+			android:id="@+id/tvquant"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_marginLeft="180dp"
+			android:textSize="20sp"
+			android:id="@+id/tvfb"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_marginLeft="140dp"
+			android:textSize="20sp"
+			android:id="@+id/tvvp"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_marginTop="51dp">
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="match_parent"
+			android:hint="Produto..."
+			android:padding="15dp"
+			android:id="@+id/product"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="left|center">
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:hint="Opção 1..."
+			android:padding="15dp"
+			android:id="@+id/op1"
+			android:ems="10"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="wrap_content"
+			android:hint="Qtde..."
+			android:inputType="number"
+			android:padding="15dp"
+			android:id="@+id/qtde1"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="wrap_content"
+			android:hint="Fabricação..."
+			android:inputType="datetime"
+			android:padding="15dp"
+			android:id="@+id/f1"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="wrap_content"
+			android:hint="Validade..."
+			android:inputType="datetime"
+			android:padding="15dp"
+			android:id="@+id/v1"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="left|center">
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="wrap_content"
+			android:hint="Opção 2..."
+			android:padding="15dp"
+			android:id="@+id/op2"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="wrap_content"
+			android:hint="Qtde..."
+			android:inputType="number"
+			android:padding="15dp"
+			android:id="@+id/qtde2"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="wrap_content"
+			android:hint="Fabricação..."
+			android:inputType="datetime"
+			android:padding="15dp"
+			android:id="@+id/f2"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="wrap_content"
+			android:hint="Validade..."
+			android:inputType="datetime"
+			android:padding="15dp"
+			android:id="@+id/v2"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="left|center">
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="wrap_content"
+			android:hint="Opção 3..."
+			android:padding="15dp"
+			android:id="@+id/op3"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="wrap_content"
+			android:hint="Qtde..."
+			android:inputType="number"
+			android:padding="15dp"
+			android:id="@+id/qtde3"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="wrap_content"
+			android:hint="Fabricação..."
+			android:inputType="datetime"
+			android:padding="15dp"
+			android:id="@+id/f3"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="wrap_content"
+			android:hint="Validade..."
+			android:inputType="datetime"
+			android:padding="15dp"
+			android:id="@+id/v3"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="left|center">
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="wrap_content"
+			android:hint="Opção 4..."
+			android:padding="15dp"
+			android:id="@+id/op4"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="wrap_content"
+			android:hint="Qtde..."
+			android:inputType="number"
+			android:padding="15dp"
+			android:id="@+id/qtde4"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="wrap_content"
+			android:hint="Fabricação..."
+			android:inputType="datetime"
+			android:padding="15dp"
+			android:id="@+id/f4"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="wrap_content"
+			android:hint="Validade..."
+			android:inputType="datetime"
+			android:padding="15dp"
+			android:id="@+id/v4"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="left|center">
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="wrap_content"
+			android:hint="Opção 5..."
+			android:padding="15dp"
+			android:id="@+id/op5"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="wrap_content"
+			android:hint="Qtde..."
+			android:inputType="number"
+			android:padding="15dp"
+			android:id="@+id/qtde5"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="wrap_content"
+			android:hint="Fabricação..."
+			android:inputType="datetime"
+			android:padding="15dp"
+			android:id="@+id/f5"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="wrap_content"
+			android:hint="Validade..."
+			android:inputType="datetime"
+			android:padding="15dp"
+			android:id="@+id/v5"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
